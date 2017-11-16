@@ -1,0 +1,48 @@
+[{
+    "iconCls": "icon-rdf-resource-description-framework-symbol",
+    "text": "Topology",
+    "viewType": "topologyView",
+    "href": "#topology"
+}, {
+    "iconCls": "icon-clipboard4",
+    "text": "Inventory",
+    "viewType": "inventoryView",
+    "href": "#inventory"
+}, {
+    "iconCls": "icon-alarm_shine",
+    "text": "Alarms",
+    "viewType": "alarmsView",
+    "href": "#alarms"
+}, {
+    "iconCls": "x-fa fa-line-chart",
+    "text": "Performance",
+    "viewType": "performanceView",
+    "href": "#performance"
+}, {
+    "iconCls": "icon-bars-chart-page-symbol",
+    "text": "Reports",
+    "viewType": "reportsView",
+    "href": "#reports"
+}, {
+    "iconCls": "icon-gear-with-dollar-sign-inside",
+    "text": "Service",
+    "viewType": "configView",
+    "href": "#config"
+}, {
+    "iconCls": "icon-database-configuration",
+    "text": "Cfg Center",
+    "viewType": "configCenterView",
+    "href": "#configcenter"
+}, {
+    "iconCls": "x-fa fa-cog",
+    "text": "System",
+    "viewType": "systemView",
+    "href": "#system"
+}
+// ,{
+//     "iconCls": "x-fa fa-bug",
+//     "text": "Test",
+//     "viewType": "widgetView",
+//     "href": "#test",
+// }
+]

@@ -1,0 +1,125 @@
+[{
+    "text": "Alarm Group Monitor",
+    "iconCls": "x-fa fa-dedent",
+    "routeId": "home",
+    "viewType": "alarmMonitorMainPanel",
+    //"fun_id": "alarmMonitorMainPanel",
+    "image": "alarm1.png",
+    "leaf": true
+}, {
+    "text": "Current Alarm Query",
+    "iconCls": "x-fa fa-bell",
+    "routeId": "current",
+    "viewType": "currentAlarmView",
+    //"fun_id": "currentAlarmView",
+    "image": "alarm2.png",
+    "leaf": true
+}, {
+    "text": "History Alarm Management",
+    "iconCls": "x-fa fa-history",
+    "routeId": "history",
+    "viewType": "historyAlarmView",
+    //"fun_id": "historyAlarmView",
+    "image": "alarm3.png",
+    "leaf": true
+}, {
+    "text": "Alarm Type Management",
+    "iconCls": "x-fa fa-align-left",
+    "routeId": "types",
+    "viewType": "alarmTypeView",
+    //"fun_id": "alarmTypeView",
+    "image": "alarm4.png",
+    "leaf": true
+}, {
+    "text": "Alarm Notify Management",
+    "iconCls": "x-fa fa-paper-plane",
+    "routeId": "notify",
+    "viewType": "alarmNotifyMainView",
+    //"fun_id": "alarmNotifyMainView",
+    "image": "alarm5.png",
+    "leaf": true
+}, {
+    "text": "Alarm Filter Policy",
+    "iconCls": "x-fa fa-filter",
+    "routeId": "polices",
+    "viewType": "alarmFilterMainView",
+    //"fun_id": "alarmFilterMainView",
+    "image": "alarm6.png",
+    "leaf": true
+}, {
+    "text": "Troubleshooting",
+    "iconCls": "x-fa fa-file-text-o",
+    "routeId": "exp",
+    "viewType": "AlarmReparExp",
+    //"fun_id": "AlarmReparExp",
+    "image": "alarm7.png",
+    "leaf": true
+}, {
+    "text": "Sync Full Network Alarm",
+    "iconCls": "x-fa fa-retweet",
+    "routeId": "syncall",
+    "viewType": "confirmAllNeSync",
+    //"fun_id": "PrototypeView",
+    "image": "alarm8.png",
+    "leaf": true
+}, {
+    "text": "Alarm Reverse",
+    "iconCls": "x-fa fa-repeat",
+    "routeId": "revert",
+    "viewType": "alarmReverse",
+    //"fun_id": "alarmReverse",
+    "image": "alarm9.png",
+    "leaf": true
+}, {
+    "text": "Alarm Sync Management",
+    "iconCls": "x-fa fa-refresh",
+    "image": "alarm10.png",
+    "expanded": false,
+    "selectable": false,
+    "children": [{
+        "text": "Alarm Synchronization Task",
+        "iconCls": "x-fa fa-clock-o",
+        "routeId": "sync-task",
+        "viewType": "AlarmSyncTaskMainView",
+        "leaf": true
+    }, {
+        "text": "Synchronization Status",
+        "iconCls": "x-fa fa-binoculars",
+        "routeId": "sync-status",
+        "viewType": "AlarmSyncStatus",
+        "leaf": true
+    }, {
+        "text": "Synchronization Global Config",
+        "iconCls": "x-fa fa-edit",
+        "routeId": "sync-config",
+        "viewType": "AlarmSyncGlobalSet",
+        "leaf": true
+    }]
+}, {
+    "text": "Alarm Trap Service Management",
+    "iconCls": "x-fa fa-gear",
+    "routeId": "serverconfig",
+    "viewType": "alarmServerConfigGridView",
+    //"fun_id": "alarmServerConfigGridView",
+    "image": "alarm12.png",
+    "leaf": true
+},{
+    "text": "Alarm Statistics Report",
+    "iconCls": "x-fa fa-gear",
+    "image": "alarm13.png",
+    "expanded": false,
+    "selectable": false,
+    "children": [{
+        "text": "Current Alarm Statistics",
+        "iconCls": "x-fa fa-bell",
+        "routeId": "currentalarmstatistics",
+        "viewType": "currentAlarmStatisticsGridView",
+        "leaf": true
+    }, {
+        "text": "History Alarm Statistics",
+        "iconCls": "x-fa fa-history",
+        "routeId": "historyalarmstatistics",
+        "viewType": "historyAlarmStatisticsGridView",
+        "leaf": true
+    }]
+}]

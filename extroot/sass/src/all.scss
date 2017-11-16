@@ -1,0 +1,230 @@
+
+// ================ copy from extjs6 examples/admin-dashboard ===============
+.shadow {
+    @include box-shadow(0 1px 2px 0 rgba(0,0,0,0.2));
+}
+
+.pop-out {
+    @include box-shadow(2px 2px 8px 2px #ccc);
+}
+
+.circular {
+    border-radius: 50%;
+}
+
+.blue-toolbar {
+    background-color: $adminlte-toolbar-background-color;
+}
+
+.logo-toolbar {
+    background-color: $adminlte-logo-background-color;
+    color: #fff;
+}
+
+// ================ copy from extjs6 examples/kitchensink/#tree-list ===============
+
+@include treelist-ui(
+    $ui: 'adminlte',
+
+    $padding: 0 10px,
+
+    // Black-ish background color
+    $background-color: $adminlte-navigation-background-color,
+    $toolstrip-background-color: $adminlte-navigation-background-color,
+
+    $tool-float-indicator-color: $adminlte-indicator-color,
+    $tool-float-indicator-width: 5px,
+
+    $tool-indicator-selected-color: $adminlte-indicator-color,
+    $tool-indicator-selected-width: 5px,
+    $tool-selected-background-color: mix(white, $adminlte-navigation-background-color, 10%),
+    //$tool-selected-color: #fff,
+    //$tool-selected-background-color: $adminlte-indicator-color,
+
+    // Darker background for expanded subtrees
+    $item-expanded-background-color: $adminlte-navigation-background-color,
+
+    // Taller line height
+    $item-line-height : 44px,
+
+    $row-over-background-color: mix(white, $adminlte-navigation-background-color, 5%),
+    $row-selected-background-color: mix(white, $adminlte-navigation-background-color, 10%),
+
+    // Off-white text
+    $item-icon-color: $panel-navigation-item-text-color,
+    $item-expander-color: #fff,
+    $item-text-color: #ADB3B8,
+
+    // Brighter when hovered
+    $item-icon-over-color: #fff,
+    $item-expander-over-color: #fff,
+    $item-text-over-color: mix(white, $panel-navigation-item-text-color, 50%),
+    $item-text-font-size: 14px,
+
+    // Various sizes for the pieces:
+    $item-icon-font-size: 18px,
+    $item-icon-width: 24px,
+    $item-expander-font-size: 16px,
+    $item-expander-width: 24px,
+
+    // Style the "row indicator" (the vertical stripe on the left edge):
+    $row-indicator-width: 5px,
+    $row-indicator-selected-color: $adminlte-indicator-color,
+    $row-indicator-selected-over-color: lighten($adminlte-indicator-color, 7%),
+    $row-indicator-over-color: transparent
+);
+
+
+// ==================== banner copy from examples/admin-dashboard ====================
+
+@include extjs-button-medium-ui(
+    $ui: 'toolbar-button',
+    $color: #f1f1f1,
+    $color-pressed: #f1f1f1,
+    $background-color: transparent,
+    $opacity-disabled: 1,
+    $glyph-color: #f1f1f1,
+    $border-width: 0
+);
+
+@include extjs-button-medium-ui(
+    $ui: 'toolbar-white-blue',
+    $color: #f1f1f1,
+    $color-pressed: #404040,
+    $background-color: transparent,
+    $background-color-pressed: #f1f1f1,
+    $opacity-disabled: 1,
+    $glyph-color: #f1f1f1,
+    $border-width: 0
+);
+
+@include extjs-button-small-ui(
+    $ui: 'alarm-sound',
+    $color: #f1f1f1,
+    $color-pressed: #f1f1f1,
+    $background-color: transparent,
+    $opacity-disabled: 1,
+    $glyph-color: #f1f1f1,
+    $border-width: 0,
+    $inner-border-color-focus: transparent,
+    $inner-border-color-focus-pressed: transparent,
+    $inner-border-color-over: transparent,
+    $inner-border-color-focus-over : transparent
+);
+
+@include extjs-button-small-ui(
+    $ui: 'alarm-counter',
+    $color: #f1f1f1,
+    $color-pressed: #f1f1f1,
+    //$background-color: #d9534f,
+    $border-radius: 5px,
+    $border-width: 0,
+
+    $inner-border-color-focus: transparent,
+    $inner-border-color-focus-pressed: transparent,
+    $inner-border-color-over: transparent,
+    $inner-border-color-focus-over : transparent,
+
+    $font-weight: 700,
+    $padding : 1px,
+    $text-padding : 1px, 
+
+    $opacity-disabled: 1,
+    $glyph-color: #f1f1f1
+);
+
+@include extjs-button-small-ui(
+    $ui: 'alarm-counter-total',
+    $color: #404040,
+    $color-pressed: #404040,
+    $background-color: #f1f1f1,
+    $border-radius: 5px,
+    $border-width: 0,
+
+    $inner-border-color-focus: transparent,
+    $inner-border-color-focus-pressed: transparent,
+    $inner-border-color-over: transparent,
+    $inner-border-color-focus-over : transparent,
+
+    $font-weight: 700,
+    $padding : 1px,
+    $text-padding : 1px, 
+
+    $opacity-disabled: 1,
+    $glyph-color: #404040
+);
+@include extjs-button-small-ui(
+    $ui: 'configcenter-button',
+    // $color: #f1f1f1,
+    // $color-pressed: #f1f1f1,
+    //$background-color: #d9534f,
+    $border-radius: 5px,
+    $border-width: 0,
+$background-color-disabled:#838B8B,
+    $inner-border-color-focus: transparent,
+    $inner-border-color-focus-pressed: transparent,
+    $inner-border-color-over: transparent,
+    $inner-border-color-focus-over : transparent,
+
+    $font-weight: 700,
+    //$padding : 0px,
+   // $text-padding : 1px, 
+
+    $opacity-disabled: 1,
+    $glyph-color: #f1f1f1
+);
+@include extjs-progress-ui(
+    $ui: 'progress',
+    $ui-bar-background-color:#3c8dbc,
+   $ui-border-radius:3px
+);
+@include extjs-progress-ui(
+    $ui: 'progress1',
+    $ui-bar-background-color:#6B8E23,
+     $ui-border-radius:3px
+);
+// This rule is required because the button mixin does not currently support
+// separate icon colors for each state
+.x-btn-pressed {
+    .x-btn-icon-el-toolbar-white-blue-medium {
+        color: #404040;
+    }
+}
+
+// ================================ dataview-multisort ====================================
+
+.dataview-multisort-item {
+    float: left;
+    padding: 8px;
+    margin: 8px 8px 4px 8px;
+}
+
+.x-rtl .dataview-multisort-item {
+    float: right;
+}
+
+.dataview-multisort-item h3 {
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 5px;
+    margin: 0;
+}
+
+// These get shared by other views
+
+.x-btn .sort-direction-asc {
+    background-image: theme-background-image('grid/sort_asc');
+    background-position: 4px center;
+}
+
+.x-btn .sort-direction-desc {
+    background-image: theme-background-image('grid/sort_desc');
+    background-position: 4px center;
+}
+
+
+@include extjs-label-ui (
+    $ui: 'adminlte',
+    $ui-vertical-spacing: 10px
+);

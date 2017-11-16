@@ -1,0 +1,55 @@
+
+<SOAP-ENV:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:cwmp="urn:dslforum-org:cwmp-1-0"    
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+  <SOAP-ENV:Header>
+       <cwmp:ID soap:mustUnderstand="1">1515151744</cwmp:ID>       
+  </SOAP-ENV:Header>  
+  <SOAP-ENV:Body>
+     <cwmp:Upload>
+       <CommandKey>uploadkey</CommandKey>
+       <FileType>1 Vendor Configuration File</FileType>
+       <URL>http://100.1.1.10:7676</URL>
+       <Username>user1</Username>
+       <Password>password</Password>
+       <DelaySeconds>1</DelaySeconds>
+      </cwmp:Upload>
+
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+  <SOAP-ENV:Header>
+    <cwmp:ID SOAP-ENV:mustUnderstand="1">1515151744</cwmp:ID>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <cwmp:UploadResponse>
+      <Status>1</Status>
+      <StartTime>0001-01-01T00:00:00Z</StartTime>
+      <CompleteTime>0001-01-01T00:00:00Z</CompleteTime>
+    </cwmp:UploadResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+  <SOAP-ENV:Body>
+    <SOAP-ENV:Fault>
+      <faultcode>Server</faultcode>
+      <faultstring>CWMP Fault</faultstring>
+      <detail>
+        <cwmp:Fault>
+          <FaultCode>9011</FaultCode>
+          <FaultString>Upload failure</FaultString>
+        </cwmp:Fault>
+      </detail>
+    </SOAP-ENV:Fault>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

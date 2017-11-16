@@ -1,0 +1,57 @@
+<SOAP-ENV:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:cwmp="urn:dslforum-org:cwmp-1-0"    
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+  <SOAP-ENV:Header>
+       <cwmp:ID soap:mustUnderstand="1">621830656</cwmp:ID>       
+  </SOAP-ENV:Header>  
+  <SOAP-ENV:Body>
+        <cwmp:Download>
+            <CommandKey>621830656</CommandKey>    
+            <FileType>1 Firmware Upgrade Image</FileType>      
+            <URL>ftp://172.16.75.99/ar18-V100R002B30D001.bin</URL>           
+            <Username>user1</Username>      
+            <Password>let me pass</Password>      
+            <FileSize>4009876</FileSize>      
+            <TargetFileName>ar18-V100R002B30D001.bin</TargetFileName>
+            <DelaySeconds>1</DelaySeconds>  
+            <SuccessURL></SuccessURL>    
+            <FailureURL></FailureURL>    
+        </cwmp:Download>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+  <SOAP-ENV:Header>
+    <cwmp:ID SOAP-ENV:mustUnderstand="1">621830656</cwmp:ID>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <cwmp:DownloadResponse>
+      <Status>1</Status>
+      <StartTime>0001-01-01T00:00:00Z</StartTime>
+      <CompleteTime>0001-01-01T00:00:00Z</CompleteTime>
+    </cwmp:DownloadResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+  <SOAP-ENV:Body>
+    <SOAP-ENV:Fault>
+      <faultcode>Server</faultcode>
+      <faultstring>CWMP Fault</faultstring>
+      <detail>
+        <cwmp:Fault>
+          <FaultCode>9010</FaultCode>
+          <FaultString>Download failure</FaultString>
+        </cwmp:Fault>
+      </detail>
+    </SOAP-ENV:Fault>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,155 @@
+ [{
+     "text": "Equipment list",
+     "iconCls": "icon-clipboard4",
+     "expanded": true,
+     "fun_id": "0101",
+     "selectable": false,
+     "children": [{
+         "text": "Ne",
+         "iconCls": "icon-router",
+         "routeId": "ne",
+         "viewType": "inventoryNeView",
+         //"fun_id": "inventoryNeView",
+         "leaf": true
+     }, {
+         "text": "Rack",
+         "iconCls": "icon-shelves_slot",
+         "routeId": "rack",
+         "viewType": "inventoryRackView",
+         //"fun_id": "inventoryRackView",
+         "leaf": true
+     }, {
+         "text": "Chassis",
+         "iconCls": "icon-shelves_box",
+         "routeId": "chassis",
+         "viewType": "inventoryChassisView",
+         //"fun_id": "inventoryChassisView",
+         "leaf": true
+     }, {
+         "text": "Slot",
+         "iconCls": "icon-server_stack",
+         "routeId": "slot",
+         "viewType": "inventorySlotView",
+         //"fun_id": "inventorySlotView",
+         "leaf": true
+     }, {
+         "text": "Local Card",
+         "iconCls": "icon-pci-card-network",
+         "routeId": "card",
+         "viewType": "inventoryCardView",
+         //"fun_id": "inventoryCardView",
+         "leaf": true
+     }, {
+         "text": "Remote Device",
+         "iconCls": "icon-linked-documents",
+         "routeId": "remote_dev",
+         "viewType": "inventoryRemoteDevView",
+         //"fun_id": "inventoryRemoteDevView",
+         "leaf": true
+     }, {
+         "text": "Port",
+         "iconCls": "icon-port_eth",
+         "expanded": true,
+         "fun_id": "010107",
+         "selectable": false,
+         "children": [{
+             "text": "All Port",
+             "iconCls": "icon-port_eth",
+             "routeId": "port",
+             "viewType": "inventoryPortView",
+             //"fun_id": "inventoryPortView",
+             "leaf": true
+         }]
+     }]
+ }, {
+     "text": "Inventory Type",
+     "iconCls": "x-fa fa-th-list",
+     "expanded": true,
+     "fun_id": "0102",
+     "selectable": false,
+     "children": [{
+         "text": "Ne Type",
+         "iconCls": "icon-router",
+         "routeId": "ne_type",
+         "viewType": "inventoryNeTypeView",
+         //"fun_id": "inventoryNeTypeView",
+         "leaf": true
+     }, {
+         "text": "Chassis Type",
+         "iconCls": "icon-shelves_box",
+         "routeId": "chassis_type",
+         "viewType": "inventoryChassisTypeView",
+         //"fun_id": "inventoryChassisTypeView",
+         "leaf": true
+     }, {
+         "text": "Card Type",
+         "iconCls": "icon-pci-card-network",
+         "routeId": "card_type",
+         "viewType": "inventoryCardTypeView",
+         //"fun_id": "inventoryCardTypeView",
+         "leaf": true
+     }, {
+         "text": "Port Type",
+         "iconCls": "icon-port_eth",
+         "routeId": "port_type",
+         "viewType": "inventoryPortTypeView",
+         //"fun_id": "inventoryPortTypeView",
+         "leaf": true
+     }]
+ }, {
+     "text": "discovery and poll",
+     "iconCls": "x-fa fa-exchange",
+     "expanded": true,
+     "fun_id": "0103",
+     "selectable": false,
+     "children": [{
+         "text": "discovery task",
+         "iconCls": "icon-radar-line fa-spin",
+         "routeId": "discovery_task",
+         "viewType": "discoveryTaskView",
+         //"fun_id": "discoveryTaskView",
+         "leaf": true
+     }, {
+         "text": "discovery templates",
+         "iconCls": "icon-puzzle_miss",
+         "routeId": "discovery_temp",
+         "viewType": "discoveryTemplateView",
+         //"fun_id": "discoveryTemplateView",
+         "leaf": true
+     }, {
+         "text": "discovery filter",
+         "iconCls": "x-fa fa-filter",
+         "routeId": "discovery_filter",
+         "viewType": "filterConditionView",
+         //"fun_id": "filterConditionView",
+         "leaf": true
+     }, {
+         "text": "device polling",
+         "iconCls": "x-fa fa-clock-o",
+         "routeId": "polling",
+         "viewType": "pollingGrid",
+         //"fun_id": "pollingGrid",
+         "leaf": true
+     }]
+ }, {
+     "text": "Synchronization Task Manage",
+     "iconCls": "x-fa fa-refresh",
+     "expanded": true,
+     "fun_id": "0104",
+     "selectable": false,
+     "children": [{
+         "text": "Synchronization Task",
+         "iconCls": "x-fa fa-clock-o",
+         "viewType": "syncTaskMainView",
+         //"fun_id": "syncTaskMainView",
+         "routeId": "task",
+         "leaf": true
+     }, {
+         "text": "Ne Synchro Status monitor",
+         "iconCls": "x-fa fa-camera",
+         "viewType": "stateMonitorView",
+         //"fun_id": "stateMonitorView",
+         "routeId": "status",
+         "leaf": true
+     }]
+ }]

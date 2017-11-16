@@ -1,0 +1,37 @@
+[{
+    "text": "Service management",
+    "iconCls": "icon-gear-with-dollar-sign-inside",
+    "expanded": true,
+    "selectable": false,
+    "children": [{
+        "text": "L2VPN service",
+        "iconCls": "icon-connection_person",
+        "expanded": true,
+        "selectable": false,
+        "children": [{
+            "text": "E-Line",
+            "iconCls": "x-fa fa-circle-o",
+            "viewType": "elineView",
+            "routeId": "home",
+            "leaf": true
+        }, {
+            "text": "Y.1564",
+            "iconCls": "x-fa fa-circle-o",
+            "viewType": "y1564View",
+            "routeId": "sdny1564",
+            "leaf": true
+        }, {
+            "text": "DHCP SERVER",
+            "iconCls": "x-fa fa-circle-o",
+            "viewType": "dhcpServerView",
+            "routeId": "dhcpServer",
+            "leaf": true
+        }, {
+            "text": "Performance",
+            "iconCls": "x-fa fa-circle-o",
+            "viewType": "pmView",
+            "routeId": "pm-view",
+            "leaf": true
+        }]
+    }]
+}]

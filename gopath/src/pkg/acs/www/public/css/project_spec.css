@@ -1,0 +1,540 @@
+
+p {
+    margin:5px;
+}
+
+.settings {
+    background-image:url(icons/fam/folder_wrench.png);
+}
+.nav {
+    background-image:url(icons/fam/folder_go.png);
+}
+.info {
+    background-image:url(icons/fam/information.png);
+}
+.icon-grid {
+	background-image:url(icons/fam/grid.png) !important;
+}
+.option {
+	background-image:url(icons/fam/plugin.gif) !important;
+}
+.save {
+	background-image:url(icons/save.gif) !important;
+}
+.listview {
+	background-image:url(icons/fam/application_view_list.png);
+}
+.task {
+	background-image: url(icons/fam/cog.gif) !important;
+}
+.task-folder {
+	background-image: url(icons/fam/folder_go.gif) !important;
+}
+
+/* style rows on mouseover */
+.x-grid-row-over .x-grid-cell-inner {
+	font-weight: bold;
+}
+/* shared styles for the ActionColumn icons */
+.x-action-col-cell img {
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+}
+
+/* for alarm grid used */
+/* old style1
+.unknown-row .x-grid-cell   { background-color: #DCDCDC; color: #696969;} 
+.normal-row .x-grid-cell    { background-color: #e2ffe2; color: #090;}
+.warning-row .x-grid-cell   { background-color: #ADD8E6; color: #4169E1;} 
+.minor-row .x-grid-cell     { background-color: #EEDD82; color: #900;}
+.major-row .x-grid-cell     { background-color: #FDD017; color: #900;} 
+.critical-row .x-grid-cell  { background-color: #F88017; color: #000000;}
+.emergency-row .x-grid-cell { background-color: #FF0000; color: #000000;}
+*/
+.unknown-row .x-grid-cell   { color: #999999;} 
+.normal-row .x-grid-cell    { color: #009900;}
+.warning-row .x-grid-cell   { color: #00CCFF;} 
+.minor-row .x-grid-cell     { color: #996600;}
+.major-row .x-grid-cell     { color: #FF6600;} 
+.critical-row .x-grid-cell  { color: #FF0000;}
+.emergency-row .x-grid-cell { color: #FF00FF;}
+
+/* for alarm window used */
+.alarm_status_0    { color: #999999;}  /*灰色*/
+.alarm_status_1    { color: #009900;}  /*浅绿色*/
+.alarm_status_2    { color: #00CCFF;}  /*浅蓝色*/ 
+.alarm_status_3    { color: #996600;}  /*土黄色*/
+.alarm_status_4    { color: #FF6600;}  /*橙色*/ 
+.alarm_status_5    { color: #FF0000;}  /*红色*/
+.alarm_status_6    { color: #FF00FF;}  /*紫红色*/
+
+/* for alarm window used */    
+.alarm_level_1     { color: #FF0000;}  /*红色*/
+.alarm_level_2     { color: #ff7f00;}  /*橙色*/
+.alarm_level_3     { color: #ffd700;}  /*黄色*/ 
+.alarm_level_4     { color: #00E5EE;}  /*浅蓝色*/ 
+.alarm_level_5     { color: #b2b2b2;}  /*灰色*/
+.alarm_level_6     { color: #8efb6e;}  /*浅绿色*/
+
+/* for alarm background */ 
+.alarm_bk_1        { background: #FF0000;}  /*红色*/
+.alarm_bk_2        { background: #ff7f00;}  /*橙色*/
+.alarm_bk_3        { background: #ffd700;}  /*黄色*/
+.alarm_bk_4        { background: #00E5EE;}  /*浅蓝色*/
+.alarm_bk_5        { background: #b2b2b2;}  /*灰色*/
+.alarm_bk_6        { background: #8efb6e;}  /*浅绿色*/
+
+/* for onu background */
+.onu_status_0      { background: #46b824;}   /*浅绿色*/
+.onu_status_1      { background: #FF0000;}   /*红色*/
+.onu_alarm_1       { background: #FF0000;}   /*红色*/
+
+/* for syslog level */
+.syslog_level_0    { color: #FF00FF;}  /*紫红色*/ 
+.syslog_level_1    { color: #FF0000;}  /*红色*/
+.syslog_level_2    { color: #FF6600;}  /*橙色*/ 
+.syslog_level_3    { color: #996600;}  /*土黄色*/
+.syslog_level_4    { color: #6600FF;}  /*紫色*/ 
+.syslog_level_5    { color: #00CCFF;}  /*浅蓝色*/
+.syslog_level_6    { color: #000000;}  /*黑色*/
+.syslog_level_7    { color: #999999;}  /*灰色*/
+
+.light_gray        { background: #CCCCCC;}
+
+.cog {background-image:url(icons/fam/cog.png);}
+.connect {background-image:url(icons/fam/connect.png);}
+.device_logo {background-image:url(../../img/h3c-logo-title.png);}
+.collapse {background-image:url(icons/ext/group-collapse.gif);}
+.expand {background-image:url(icons/ext/group-expand.gif);}
+
+.k_services {background-image:url(icons/ext/k-services-icon.png) !important;}
+.server3d {background-image:url(icons/ext/server_3d.png) !important;}
+.server_network {background-image:url(icons/ext/server-network-icon.png) !important;}
+.server_database {background-image:url(icons/ext/database-server-icon.png) !important;}
+.computer_network {background-image:url(icons/ext/computer-network-icon.png) !important;}
+.global {background-image:url(icons/ext/Globe-icon.png) !important;}
+.global_green {background-image:url(icons/ext/globe-green-icon.png) !important;}
+.global_network {background-image:url(icons/ext/Network-global.png) !important;}
+
+.ethernet {background-image:url(icons/ext/network-ethernet-icon.png) !important;}
+.ethernet_cable {background-image:url(icons/ext/Ethernet-Cable-icon.png) !important;}
+.system_preferences {background-image:url(icons/ext/System-Preferences-icon.png) !important;}
+.system_preferences2 {background-image:url(icons/ext/gear-in-icon.png) !important;}
+.traffic_light {background-image:url(icons/ext/Traffic-light-icon.png) !important;}
+
+.bar_chart {background-image:url(icons/ext/Bar-chart-icon.png) !important;}
+.pie_chart {background-image:url(icons/ext/chart-pie-separate-icon.png) !important;}
+.line_chart {background-image:url(icons/ext/Line-chart-icon.png) !important;}
+
+.desktop {background-image:url(icons/ext/Apps-preferences-system-login-icon.png) !important;}
+.wheel {background-image:url(icons/ext/wheel-icon.png) !important;}
+.ladybird {background-image:url(icons/ext/ladybird-icon.png) !important;}
+.extension {background-image:url(icons/ext/icon-extension-icon.png) !important;}
+.sitemap {background-image:url(icons/ext/sitemap-color-icon.png) !important;}
+.rules {background-image:url(icons/ext/rules-icon.png) !important;}
+.balance {background-image:url(icons/ext/justice-balance-icon.png) !important;}
+.computer_group2 {background-image:url(icons/ext/Network-icon2.png) !important;}
+.computer_group {background-image:url(icons/ext/network-icon.png) !important;}
+.gallery {background-image:url(icons/ext/application-view-gallery-icon.png) !important;}
+.server_components {background-image:url(icons/ext/server-components-icon.png) !important;}
+
+.toggle_plus {background-image:url(icons/ext/magnifier-plus-icon.png);}
+.toggle_minus {background-image:url(icons/ext/magnifier-minus-icon-icon.png);}
+.document_move {background-image:url(icons/ext/document_move.png);}
+
+.logout {background-image:url(icons/ext/Log-Out-icon.png)}
+.arrow_up {background-image:url(icons/ext/col-move-bottom.gif)}
+.arrow_down {background-image:url(icons/ext/col-move-top.gif)}
+.user_group {background-image:url(icons/ext/User-Group-icon.png)}
+.user_group_imp {background-image:url(icons/ext/User-Group-icon.png) !important;}
+.arrow_switch {background-image:url(icons/ext/arrow-switch-icon.png)}
+
+.green_home {background-image:url(icons/ext/green-home-icon.png) !important;}
+.interface_preferences {background-image:url(icons/ext/interface-preferences-icon.png) !important;}
+.gear_gray {background-image:url(icons/ext/prefs-icon.png) !important;}
+.plugin_edit {background-image:url(icons/ext/plugin-edit-icon.png) !important;}
+.move_to {background-image:url(icons/ext/drop-over.gif) !important;}
+
+.node_tree {background-image:url(icons/ext/node-tree-icon.png) !important;}
+.vserver_group {background-image:url(icons/ext/servers-network-icon.png) !important;}
+.vserver {background-image:url(icons/ext/server-network-icon.png) !important;}
+.server {background-image:url(icons/ext/server_gray.png) !important;}
+.data_center {background-image:url(icons/ext/network-cloud-icon.png) !important;}
+.dns_service {background-image:url(icons/ext/dns-icon.png) !important;}
+.resources {background-image:url(icons/ext/network-clouds-icon.png) !important;}
+.dns_serach {background-image:url(icons/ext/arrow-switch-icon.png) !important;}
+.unfinish {background-image:url(icons/ext/application-error-icon.png) !important;}
+.gen_system_setting_imp {background-image:url(icons/fam/cog.png) !important;}
+.gen_system_setting {background-image:url(icons/fam/cog.png);}
+.syslog {background-image:url(icons/ext/server-information-icon.png) !important;}
+.probe {background-image:url(icons/ext/send-icon.png) !important;}
+.geographics {background-image:url(icons/ext/network-icon3.png) !important;}
+.license_key {background-image:url(icons/ext/license-key-icon.png) !important;}
+.snmp_setting {background-image:url(icons/ext/drive-network-icon.png) !important;}
+.global_load_balance {background-image:url(icons/ext/globe-network-icon.png) !important;}
+.home_network {background-image:url(icons/ext/home-network-icon.png) !important;}
+.h3c_lb_icon {background-image:url(icons/ext/drive-network-icon.png) !important;}
+
+.add {background-image:url(icons/ext/page-white-add-icon.png) !important;}
+.edit_task {background-image:url(icons/ext/page-white-edit-icon.png) !important;}
+.remove {background-image:url(icons/ext/page-white-delete-icon.png) !important;}
+
+.refresh {background-image:url(icons/ext/refresh.gif);}
+.refresh_green {background-image:url(icons/ext/action-refresh-icon.png);}
+.refresh_button_circle {background-image:url(icons/ext/Button-Refresh-icon.png);}
+.refresh_button {background-image:url(icons/ext/page-refresh-icon.png);}
+
+.action_find_icon {background-image:url(icons/ext/Actions-find-icon.png);}
+.action_clear_icon {background-image:url(icons/ext/Actions-dialog-close-icon-black.png);}
+
+.device_eoc {background-image:url(icons/ext/eoc_clt.png)!important;}
+.map_block {background-image:url(icons/ext/city-buildings.png)!important;}
+.map_building {background-image:url(icons/ext/office-building-icon.png)!important;}
+.device_cnu_imp {background-image:url(icons/ext/drive-network-icon.png)!important;}
+
+.warning {background-image:url(icons/ext/warning-icon.png);}
+.device_cnu {background-image:url(icons/ext/drive-network-icon.png);}
+.device_clt {background-image:url(icons/ext/eoc_clt.png);}
+.performance {background-image:url(icons/ext/system-monitor-network-icon.png);}
+.firmware {background-image:url(icons/ext/download_arrow_down_save_folder-16.png);}
+.config_file {background-image:url(icons/ext/Actions-configure-icon.png);}
+.fault_location {background-image:url(icons/ext/status-icon.png);}
+.template {background-image:url(icons/ext/list-extensions-icon.png);}
+.main_menu {background-image:url(icons/ext/green-home-icon.png);}
+.vlan_icon {background-image:url(icons/ext/dns-icon.png);}
+.clt_port {background-image:url(icons/ext/network-hub-icon.png);}
+.button_save {background-image:url(icons/ext/Save-icon.png);}
+.trend_icon {background-image:url(icons/ext/Chart-Graph-Ascending-icon.png);}
+.import_perf_temp {background-image:url(icons/ext/icon-download-icon.png);}
+.discovery_device {background-image:url(icons/ext/radar-icon.png);}
+.add_del_device {background-image:url(icons/ext/Categories-preferences-system-icon.png);}
+.fault_location_tree {background-image:url(icons/ext/chart-organisation-icon.png);}
+.performance_summary {background-image:url(icons/ext/Chart-Graph-Ascending-icon.png);}
+.alarm_list {background-image:url(icons/ext/application-view-list-icon.png);}
+.upgrade_button {background-image:url(icons/ext/icon-download-icon.png);}
+.heavy_config {background-image:url(icons/ext/gear-in-icon.png);}
+.snmp_config {background-image:url(icons/ext/prefs-icon.png);}
+.database_network {background-image:url(icons/ext/database-network-icon.png);}
+.device_alarm_status {background-image:url(icons/ext/drive-error-icon.png);}
+.device_alarm_topn {background-image:url(icons/ext/table-select-row-icon.png);}
+.database_download {background-image:url(icons/ext/database-down-icon.png);}
+.database_upload {background-image:url(icons/ext/database-up-icon.png);}
+.submit_temp_config {background-image:url(icons/ext/Download-icon.png);}
+.upgrade_clt {background-image:url(icons/ext/Download-icon.png);}
+.upgrade_cnu {background-image:url(icons/ext/drive-download-icon.png);}
+.trash_icon {background-image:url(icons/ext/Industry-Trash-2-icon.png);}
+.ping_icon {background-image:url(icons/ext/send-icon.png);}
+.telnet_icon {background-image:url(icons/ext/network-icon.png);}
+.disk_share_icon {background-image:url(icons/ext/disk-share-icon.png);}
+.server_database_icon {background-image:url(icons/ext/database-server-icon.png);}
+
+.customer_info {background-image:url(icons/ext/user-edit-icon.png)!important;}
+.rrdtool_grid {background-image:url(icons/ext/text-list-bullets-icon.png);}
+.system_daemon_manager {background-image:url(icons/ext/Action-exit-icon.png)!important;}
+
+/* device node tree icon matrix */
+.lv1_0 {background-image:url(icons/ext/status/home-network-icon-gray.png)!important;}
+.lv1_1 {background-image:url(icons/ext/status/home-network-icon-green.png)!important;}
+.lv1_2 {background-image:url(icons/ext/status/home-network-icon-blue.png)!important;}
+.lv1_3 {background-image:url(icons/ext/status/home-network-icon-yellow.png)!important;}
+.lv1_4 {background-image:url(icons/ext/status/home-network-icon-orange.png)!important;}
+.lv1_5 {background-image:url(icons/ext/status/home-network-icon-red.png)!important;}
+
+.lv2_0 {background-image:url(icons/ext/status/home-network-icon-gray.png)!important;}
+.lv2_1 {background-image:url(icons/ext/status/home-network-icon-green.png)!important;}
+.lv2_2 {background-image:url(icons/ext/status/home-network-icon-blue.png)!important;}
+.lv2_3 {background-image:url(icons/ext/status/home-network-icon-yellow.png)!important;}
+.lv2_4 {background-image:url(icons/ext/status/home-network-icon-orange.png)!important;}
+.lv2_5 {background-image:url(icons/ext/status/home-network-icon-red.png)!important;}
+
+.lv3_0 {background-image:url(icons/ext/status/home-network-icon-gray.png)!important;}
+.lv3_1 {background-image:url(icons/ext/status/home-network-icon-green.png)!important;}
+.lv3_2 {background-image:url(icons/ext/status/home-network-icon-blue.png)!important;}
+.lv3_3 {background-image:url(icons/ext/status/home-network-icon-yellow.png)!important;}
+.lv3_4 {background-image:url(icons/ext/status/home-network-icon-orange.png)!important;}
+.lv3_5 {background-image:url(icons/ext/status/home-network-icon-red.png)!important;}
+
+.lv4_0 {background-image:url(icons/ext/status/home-network-icon-gray.png)!important;}
+.lv4_1 {background-image:url(icons/ext/status/home-network-icon-green.png)!important;}
+.lv4_2 {background-image:url(icons/ext/status/home-network-icon-blue.png)!important;}
+.lv4_3 {background-image:url(icons/ext/status/home-network-icon-yellow.png)!important;}
+.lv4_4 {background-image:url(icons/ext/status/home-network-icon-orange.png)!important;}
+.lv4_5 {background-image:url(icons/ext/status/home-network-icon-red.png)!important;}
+
+.lv5_0 {background-image:url(icons/ext/status/home-network-icon-gray.png)!important;}
+.lv5_1 {background-image:url(icons/ext/status/home-network-icon-green.png)!important;}
+.lv5_2 {background-image:url(icons/ext/status/home-network-icon-blue.png)!important;}
+.lv5_3 {background-image:url(icons/ext/status/home-network-icon-yellow.png)!important;}
+.lv5_4 {background-image:url(icons/ext/status/home-network-icon-orange.png)!important;}
+.lv5_5 {background-image:url(icons/ext/status/home-network-icon-red.png)!important;}
+
+.lv6_0 {background-image:url(icons/ext/status/home-network-icon-gray.png)!important;}
+.lv6_1 {background-image:url(icons/ext/status/home-network-icon-green.png)!important;}
+.lv6_2 {background-image:url(icons/ext/status/home-network-icon-blue.png)!important;}
+.lv6_3 {background-image:url(icons/ext/status/home-network-icon-yellow.png)!important;}
+.lv6_4 {background-image:url(icons/ext/status/home-network-icon-orange.png)!important;}
+.lv6_5 {background-image:url(icons/ext/status/home-network-icon-red.png)!important;}
+
+.lv7_0 {background-image:url(icons/ext/status/home-network-icon-gray.png)!important;}
+.lv7_1 {background-image:url(icons/ext/status/home-network-icon-green.png)!important;}
+.lv7_2 {background-image:url(icons/ext/status/home-network-icon-blue.png)!important;}
+.lv7_3 {background-image:url(icons/ext/status/home-network-icon-yellow.png)!important;}
+.lv7_4 {background-image:url(icons/ext/status/home-network-icon-orange.png)!important;}
+.lv7_5 {background-image:url(icons/ext/status/home-network-icon-red.png)!important;}
+
+.lv8_0 {background-image:url(icons/ext/status/home-network-icon-gray.png)!important;}
+.lv8_1 {background-image:url(icons/ext/status/home-network-icon-green.png)!important;}
+.lv8_2 {background-image:url(icons/ext/status/home-network-icon-blue.png)!important;}
+.lv8_3 {background-image:url(icons/ext/status/home-network-icon-yellow.png)!important;}
+.lv8_4 {background-image:url(icons/ext/status/home-network-icon-orange.png)!important;}
+.lv8_5 {background-image:url(icons/ext/status/home-network-icon-red.png)!important;}
+
+.device_clt_0 {background-image:url(icons/ext/status/drive-network-icon-gray.png)!important;}
+.device_clt_1 {background-image:url(icons/ext/status/drive-network-icon-green.png)!important;}
+.device_clt_2 {background-image:url(icons/ext/status/drive-network-icon-blue.png)!important;}
+.device_clt_3 {background-image:url(icons/ext/status/drive-network-icon-yellow.png)!important;}
+.device_clt_4 {background-image:url(icons/ext/status/drive-network-icon-orange.png)!important;}
+.device_clt_5 {background-image:url(icons/ext/status/drive-network-icon-red.png)!important;}
+
+.device_clt_port_0 {background-image:url(icons/ext/status/network_ethernet-0)!important;}
+.device_clt_port_1 {background-image:url(icons/ext/status/network_ethernet-1)!important;}
+.device_clt_port_2 {background-image:url(icons/ext/status/network_ethernet-2)!important;}
+.device_clt_port_3 {background-image:url(icons/ext/status/network_ethernet-3)!important;}
+.device_clt_port_4 {background-image:url(icons/ext/status/network_ethernet-4)!important;}
+.device_clt_port_5 {background-image:url(icons/ext/status/network_ethernet-5)!important;}
+
+.user_status_0 {background-image:url(icons/ext/status/user-icon-0.png)!important;}
+.user_status_1 {background-image:url(icons/ext/status/user-icon-1.png)!important;}
+.user_status_2 {background-image:url(icons/ext/status/user-icon-2.png)!important;}
+.user_status_3 {background-image:url(icons/ext/status/user-icon-3.png)!important;}
+.user_status_4 {background-image:url(icons/ext/status/user-icon-4.png)!important;}
+.user_status_5 {background-image:url(icons/ext/status/user-icon-5.png)!important;}
+
+.wifi_template_icon {background-image:url(icons/ext/list-extensions-icon.png)!important;}
+.wifi_wlan_template_icon {background-image:url(icons/ext/polys.png)!important;}
+.wifi_wlan_template_disable_icon {background-image:url(icons/ext/polys_gray.png)!important;}
+.wifi_radio_icon {background-image:url(icons/ext/Wi-Fi-icon-2.png)!important;}
+
+.config_device_icon {background-image:url(icons/ext/tool-icon.png);}
+.user_treeicon {background-image:url(icons/ext/user-icon.png)!important;}
+.user_icon_normal {background-image:url(icons/ext/status/user-icon-1.png);}
+.user_listview_icon {background-image:url(icons/ext/application-view-icons-icon.png);}
+.home_network_normal {background-image:url(icons/ext/home-network-icon.png);}
+.bar_chart_normal {background-image:url(icons/ext/Bar-chart-icon.png);}
+.pie_chart_normal {background-image:url(icons/ext/chart-pie-separate-icon.png);}
+.line_chart_normal {background-image:url(icons/ext/Line-chart-icon.png);}
+.node_tree_up_normal {background-image:url(icons/ext/arrow-up-icon1.png);}
+.save_config_icon_normal {background-image:url(icons/ext/Drives-Floppy-icon.png);}
+.treeview_icon_normal {background-image:url(icons/ext/node-select-icon.png);}
+.actions_dialog_close_icon {background-image:url(icons/ext/Actions-dialog-close-icon.png);}
+.sort_descending_icon {background-image:url(icons/ext/sort-descending-icon.png);}
+.traffic_light_normal {background-image:url(icons/ext/Traffic-light-icon.png);}
+.ethernet_normal_icon {background-image:url(icons/ext/network-ethernet-icon.png);}
+
+.wifi_template_icon_normal {background-image:url(icons/ext/polys.png);}
+.wifi_radio_icon_normal {background-image:url(icons/ext/Wi-Fi-icon-2.png);}
+.wifi_filter_icon_normal {background-image:url(icons/ext/filter-icon.png);}
+.wifi_sync_icon_normal {background-image:url(icons/ext/sync-icon.png);}
+.wifi_web_console_icon_normal {background-image:url(icons/ext/web-management-icon.png);}
+
+.statistics_icon_normal {background-image:url(icons/ext/Chart-Bar-Files-Wide-icon.png);}
+.schedule_task_icon_normal {background-image:url(icons/ext/Clock-icon.png);}
+.wifi_clients_icon_normal {background-image:url(icons/ext/mobile-phone-cast-icon.png);}
+.wifi_kickoff_clients_icon_normal {background-image:url(icons/ext/Actions-im-kick-user-icon.png);}
+.device_inventory_icon_normal {background-image:url(icons/ext/database-gear-icon.png);}
+.redo_scan_temp_icon_normal {background-image:url(icons/ext/Redo-icon.png);}
+
+.license_gen_icon {background-image:url(icons/ext/server-key-icon.png);}
+.license_reset_icon {background-image:url(icons/ext/restart.png);}
+.license_add_icon {background-image:url(icons/ext/key-add-icon.png);}
+.license_delete_icon {background-image:url(icons/ext/key-delete-icon.png);}
+.email_alert_icon {background-image:url(icons/ext/email-alert-icon.png);}
+.email_server_check_icon {background-image:url(icons/ext/flash-icon.png);}
+.email_send_test_icon {background-image:url(icons/ext/mail-message-send-icon.png);}
+.device_export_icon {background-image:url(icons/ext/drive-upload-icon.png);}
+.factory_defaults_icon {background-image:url(icons/ext/Sync-Red-icon.png);}
+
+.alarm_menu {background-image:url(icons/ext/Alarm-icon.png);}
+.topo_menu {background-image:url(icons/ext/pong.png);}
+.security_menu {background-image:url(icons/ext/lock_green.png);}
+.inventory_menu {background-image:url(icons/ext/xxx047-16.png);}
+.ems_config_menu {background-image:url(icons/ext/Download-icon.png);}
+.report_menu {background-image:url(icons/ext/chart-pie-separate-icon.png);}
+.others_menu {background-image:url(icons/ext/node-tree-icon.png);}
+.logon_menu {background-image:url(icons/ext/user-icon.png);}
+.customer_menu {background-image:url(icons/ext/User-Group-icon.png);}
+.datacenter_menu {background-image:url(icons/ext/databases-icon.png);}
+.windows_menu {background-image:url(icons/ext/windows-icon.png);}
+.help_menu {background-image:url(icons/ext/Help-icon.png);}
+.current_user_logout_menu {background-image:url(icons/ext/Action-exit-icon.png);}
+.other_user_login_menu {background-image:url(icons/ext/User-Blue-icon.png);}
+.super_user_icon {background-image:url(icons/ext/User-Green-icon_2.png);}
+.login_user_icon {background-image:url(icons/ext/User-Green-icon.png);}
+.user_group_icon {background-image:url(icons/ext/Users-icon.png);}
+.current_alarm_menu {background-image:url(icons/ext/warning-icon.png);}
+.historical_alarm_menu {background-image:url(icons/ext/application-error-icon.png);}
+.onu_maintain_menu {background-image:url(icons/ext/Transport-Road-Worker-icon.png);}
+.onu_legalize_menu {background-image:url(icons/ext/Science-Scales-icon.png);}
+.system_users_menu {background-image:url(icons/ext/Users-2-icon.png);}
+.system_super_users_menu {background-image:url(icons/ext/Users-2-icon_2.png);}
+.language_menu {background-image:url(icons/ext/Globe-icon.png);}
+.language_zh_CN {background-image:url(icons/ext/China-icon-circle.png);}
+.language_en_US {background-image:url(icons/ext/USA-icon.png);}
+.language_en_UK {background-image:url(icons/ext/uk-icon.png);}
+.theme_menu {background-image:url(icons/ext/Theme-icon.png);}
+.theme_classic_menu {background-image:url(icons/ext/square-icon-1.png);}
+.theme_gray_menu    {background-image:url(icons/ext/square-icon-2.png);}
+.theme_access_menu  {background-image:url(icons/ext/square-icon-3.png);}
+.theme_neptune_menu {background-image:url(icons/ext/square-icon-4.png);}
+.realtime_alarm_menu {background-image:url(icons/ext/application-split-icon.png);}
+.search_subnet_btn {background-image:url(icons/ext/node-magnifier-icon.png);}
+.search_reset_bnt {background-image:url(icons/ext/magnifier-history-icon.png);}
+.search_with_condition {background-image:url(icons/ext/magnifier-zoom-actual-equal-icon.png);}
+.config_apply_btn {background-image:url(icons/ext/tool-icon.png);}
+.find_alarm_btn {background-image:url(icons/ext/magnifier-exclamation-icon-icon.png);}
+.onu_optical_power_btn {background-image:url(icons/ext/dashboard-network-icon.png);}
+.alarm_event_btn {background-image:url(icons/ext/sign-info-icon.png);}
+.ack_alarm_btn {background-image:url(icons/ext/accept-icon.png);}
+.unack_alarm_btn {background-image:url(icons/ext/arrow-redo-icon2.png);}
+.uplevel_alarm_btn {background-image:url(icons/ext/arrow-up-icon1.png);}
+.delete_alarm_btn {background-image:url(icons/ext/page-delete-icon.png);}
+.alarm_experience_btn {background-image:url(icons/ext/document-pencil-icon.png);}
+.harddisk_icon {background-image:url(icons/ext/HardDisk.png);}
+.check_box_list_icon {background-image:url(icons/ext/ui-check-boxes-list-icon.png);}
+.node_size_select_icon {background-image:url(icons/ext/Restore-16.png);}
+.multilink_style_icon {background-image:url(icons/ext/47-16.png);}
+.adjust_slider_icon {background-image:url(icons/ext/adjust-16.png);}
+.line_spacing_icon {background-image:url(icons/ext/ic_format_line_spacing_48px-16.png);}
+
+.web_login_title {background-image:url(icons/ext/lock_flat.png);}
+.web_login_user  {background-image:url(icons/ext/one_user_data_graphic_info_infos-16.png);}
+.web_login_reset {background-image:url(icons/ext/clean_flat.png);}
+.web_login_download {background-image:url(icons/ext/Download-16.png);}
+.web_login_chrome {background-image:url(icons/ext/chrome3-16.png);}
+
+.alarm_main_icon {background-image:url(icons/ext/error-icon.png)!important;}
+.alarm_relation_icon {background-image:url(icons/ext/bullet-error-icon.png)!important;}
+
+.tree_collapse_icon {background-image:url(icons/ext/collapse.png);}
+.tree_expand_icon {background-image:url(icons/ext/expand.png);}
+.topo_basic_icon {background-image:url(icons/ext/topo.png);}
+.topo_prop_icon {background-image:url(icons/ext/topo_prop.png);}
+.topo_legend_icon {background-image:url(icons/ext/webResource.gif);}
+
+.topo_view_top_icon {background-image:url(icons/nnm/toolbar/Net.gif);}
+.topo_view_back_icon {background-image:url(icons/nnm/toolbar/Back.gif);}
+.topo_view_next_icon {background-image:url(icons/nnm/toolbar/Next.gif);}
+.topo_view_up_icon {background-image:url(icons/nnm/toolbar/Up.gif);}
+.topo_device_add_icon {background-image:url(icons/nnm/add.gif);}
+.topo_device_addnode_icon {background-image:url(icons/nnm/toolbar/AddNode.gif);}
+.topo_device_addsymbol_icon {background-image:url(icons/nnm/toolbar/AddSymbol.gif);}
+.topo_device_addnet_icon {background-image:url(icons/nnm/toolbar/AddNet.gif);}
+.topo_device_addlink_icon {background-image:url(icons/nnm/toolbar/AddLink.gif);}
+.topo_node_edit_properties_icon {background-image:url(icons/nnm/toolbar/Edit.gif);}
+.topo_node_moveto_icon {background-image:url(icons/nnm/new/moveto.gif);}
+.topo_node_delete_icon {background-image:url(icons/nnm/delete.gif);}
+.topo_node_refresh_icon {background-image:url(icons/nnm/toolbar/refresh_node.gif);}
+.topo_view_lock_icon {background-image:url(icons/nnm/new/lockWindows.png);}
+.topo_view_unlock_icon {background-image:url(icons/nnm/new/unlockWindows.png);}
+.topo_alarm_view_icon {background-image:url(icons/nnm/new/alarmMgt.gif);}
+.topo_default_select_icon {background-image:url(icons/nnm/toolbar/Select.gif);}
+.topo_hand_move_icon {background-image:url(icons/nnm/toolbar/pan.png);}
+.topo_delay_move_icon {background-image:url(icons/nnm/toolbar/lazyMove.png);}
+.topo_export_menu_icon {background-image:url(icons/nnm/export.gif);}
+.topo_export2img_icon {background-image:url(icons/nnm/toolbar/exportToImage.png);}
+.topo_search_icon {background-image:url(icons/nnm/toolbar/Search.gif);}
+.topo_fullscreen_icon {background-image:url(icons/nnm/toolbar/fullScreen.png);}
+.topo_birdeye_icon {background-image:url(icons/nnm/toolbar/Miniature.gif);}
+.topo_zoomout_icon {background-image:url(icons/nnm/toolbar/ZoomOut.gif);}
+.topo_zoomin_icon {background-image:url(icons/nnm/toolbar/ZoomIn.gif);}
+.topo_zoomselect_icon {background-image:url(icons/nnm/toolbar/ZoomSelect.png);}
+.topo_magnify_icon {background-image:url(icons/nnm/toolbar/Magnify.png);}
+.topo_zoomsetting_icon {background-image:url(icons/nnm/toolbar/zoomsetting.gif);}
+.topo_zoomreset_icon {background-image:url(icons/nnm/toolbar/ZoomReset.gif);}
+.topo_zoomfit_icon {background-image:url(icons/nnm/toolbar/ZoomFit.gif);}
+.topo_layout_edit_icon {background-image:url(icons/nnm/toolbar/EditLayout.gif);}
+.topo_layout_save_icon {background-image:url(icons/nnm/toolbar/SaveLayout.gif);}
+.topo_layout_custome_icon {background-image:url(icons/nnm/custom.gif);}
+.topo_layout_tree_icon {background-image:url(icons/nnm/tree.gif);}
+.topo_layout_lefttree_icon {background-image:url(icons/nnm/lefttree.gif);}
+.topo_layout_grid_icon {background-image:url(icons/nnm/grid.gif);}
+.topo_layout_star_icon {background-image:url(icons/nnm/star.gif);}
+.topo_layout_stretch_icon {background-image:url(icons/nnm/stretch.gif);}
+.topo_layout_bus_icon {background-image:url(icons/nnm/bus.gif);}
+.topo_layout_force {background-image:url(icons/ext/stock_node-corner.png);}
+.topo_layout_force2 {background-image:url(icons/ext/2098-16.png);}
+.topo_layout_freeze {background-image:url(icons/ext/pin-icon.png);}
+.topo_search_button {background-image:url(icons/resource/icon/16x16/find.png);}
+.topo_node_enter_menu {background-image:url(icons/resource/newtopo/icon/16x16/enter.png);}
+.topo_rclick_edit_menu {background-image:url(icons/nnm/new/edit.png);}
+.topo_rclick_view_menu {background-image:url(icons/resource/icon/16x16/exportText.png);}
+
+.no-icon {display:none;}
+.raisecom_logo {background-image:url(icons/ext/raisecom16.png);}
+
+.physical_inventory_menu {background-image:url(icons/resource/icon/16x16/physical.png);}
+.resource_type_menu {background-image:url(icons/resource/icon/16x16/resourceTypeMgt.png);}
+.usercal_menu {background-image:url(icons/resource/icon/16x16/useracl.png);}
+.check_mac_addr_menu {background-image:url(icons/resource/icon/16x16/about.png);}
+.resource_sync_menu {background-image:url(icons/resource/icon/16x16/sync.png);}
+.resource_sync_task_menu {background-image:url(icons/resource/icon/16x16/syntask.png);}
+.global_sync_setting_menu {background-image:url(icons/resource/icon/16x16/component.png);}
+.ne_diff_report_menu {background-image:url(icons/resource/icon/16x16/deviceMgt.png);}
+.ne_sync_stat_monitor_menu {background-image:url(icons/resource/icon/16x16/console_view.png);}
+
+.current_alarm_stat_menu {background-image:url(icons/resource/icon/16x16/currentAlarmStat.png);}
+.history_alarm_stat_menu {background-image:url(icons/resource/icon/16x16/historyAlarmStat.png);}
+.device_type_stat_menu {background-image:url(icons/resource/icon/16x16/deviceTypeStat.png);}
+.port_rate_stat_menu {background-image:url(icons/resource/icon/16x16/portRadioStat.png);}
+.device_stat_menu {background-image:url(icons/resource/icon/16x16/deviceStat.png);}
+.idle_slot_stat_menu {background-image:url(icons/resource/icon/16x16/IdleSlotsStat.png);}
+.ptn_stat_menu {background-image:url(icons/resource/icon/16x16/ptnMgt.png);}
+.card_type_stat_menu {background-image:url(icons/resource/icon/16x16/cardTypeStat.png);}
+.syslog_menu {background-image:url(icons/resource/icon/16x16/database3.png);}
+.syslog_query_menu {background-image:url(icons/resource/icon/16x16/syslog_rfc3164.png);}
+.syslog_sys_oper_menu {background-image:url(icons/resource/icon/16x16/sysOperLog.png);}
+.syslog_dev_oper_menu {background-image:url(icons/resource/icon/16x16/deviceLog.png);}
+.syslog_user_logon_menu {background-image:url(icons/resource/icon/16x16/userloginlog.png);}
+.syslog_sys_event_menu {background-image:url(icons/resource/icon/16x16/systemEventMgt.png);}
+.syslog_security_menu {background-image:url(icons/resource/icon/16x16/newUserMgt.png);}
+.property_search_menu {background-image:url(icons/resource/newtopo/symbols/toolbar/Search.png);}
+.property_edit_menu {background-image:url(icons/resource/symbols/toolbar/Edit.png);}
+.property_refresh_menu {background-image:url(icons/resource/newtopo/symbols/toolbar/refresh.png);}
+.property_export_excel_menu {background-image:url(icons/resource/icon/16x16/exportExcel.png);}
+.property_topo_location_menu {background-image:url(icons/resource/newtopo/icon/16x16/topLocation.png);}
+.property_deviceview_menu {background-image:url(icons/resource/newtopo/icon/16x16/deviceview.png);}
+.property_alarm_menu {background-image:url(icons/resource/newtopo/icon/16x16/alarmMgt.png);}
+.property_customer_menu {background-image:url(icons/resource/icon/16x16/attach.png);}
+.property_alarm_filter_menu {background-image:url(icons/resource/icon/16x16/filtered.png);}
+.property_alarm_view_menu {background-image:url(icons/resource/newtopo/icon/16x16/viewevent.png);}
+.property_resource_sync_menu {background-image:url(icons/resource/symbols/decoration/sync.png);}
+.property_resource_chassis_menu {background-image:url(icons/resource/icon/16x16/chassisMgt.png);}
+.property_resource_card_menu {background-image:url(icons/resource/newtopo/icon/16x16/card.png);}
+.property_resource_port_menu {background-image:url(icons/resource/newtopo/icon/16x16/portMgt.png);}
+.property_resource_userdevice_menu {background-image:url(icons/resource/newtopo/icon/16x16/userdevice.png);}
+.rclick_tools_menu {background-image:url(icons/resource/icon/16x16/tools.png);}
+.rclick_tool_menu {background-image:url(icons/resource/icon/16x16/tool.png);}
+.rclick_telnet_menu {background-image:url(icons/resource/icon/16x16/telnet.png);}
+.rclick_modify_ip_menu {background-image:url(icons/resource/symbols/toolbar/modifyNetIP.png);}
+.security_acl_menu {background-image:url(icons/resource/icon/16x16/accessLimitList.png);}
+.security_strategy_menu {background-image:url(icons/resource/icon/16x16/secStrategy.png);}
+.pong_menu {background-image:url(icons/resource/icon/16x16/splitter.png);}
+
+.security_management_treeicon {background-image:url(icons/ext/shield_256-16.png) !important;}
+.security_onlineuser_treeicon {background-image:url(icons/ext/user_male_accept.png) !important;}
+.security_usersfolder_treeicon {background-image:url(icons/ext/folder_user.png) !important;}
+.security_usersgroupfolder_treeicon {background-image:url(icons/ext/folder_usergroup.png) !important;}
+.security_folder_wrench_treeicon {background-image:url(icons/ext/folder_wrench.png) !important;}
+.security_top_menu {background-image:url(icons/ext/sheild.png);}
+.security_user_monitor_menu {background-image:url(icons/ext/153-16.png);}
+.alarm_top_menu {background-image:url(icons/ext/alarm_clock_time_bell_wait-16.png);}
+.security_new_acl_menu {background-image:url(icons/ext/control_panel_access.png);}
+.security_new_strategy_menu {background-image:url(icons/ext/list_security.gif);}
+.security_strategy_password {background-image:url(icons/ext/key_2-16.png);}
+.security_strategy_account {background-image:url(icons/ext/group_key.png);}
+.security_user_unlock {background-image:url(icons/ext/unlock-16.png);}
+.security_user_kickoff {background-image:url(icons/ext/User-Delete-icon.png);}
+.security_gear_selected {background-image:url(icons/ext/process-accept-icon.png);}
+.security_gear {background-image:url(icons/ext/process-icon.png);}
+.security_folder_selected {background-image:url(icons/ext/folder_wrench_selected.png);}

@@ -1,0 +1,85 @@
+[{
+    "text": "Historical performance tasks",
+    "iconCls": "x-fa fa-history",
+    "expanded": true,
+    "fun_id": "0501",
+    "selectable": false,
+    "children": [{
+        "text": "historyPerformanceMang",
+        "routeId": "performanceMainView",
+        "iconCls": "x-fa fa-tasks",
+        "viewType": "performanceMainView",
+        //"fun_id": "performanceMainView",
+        "leaf": true
+    }, {
+        "text": "historyDisplay",
+        "iconCls": "pictos pictos-chart2",
+        "routeId": "historyDisplayView",
+        "viewType": "historyDisplayView",
+        //"fun_id": "historyDisplayView",
+        "leaf": true
+    }]
+}, {
+    "text": "realTimeTasks",
+    "iconCls": "icon-spinner-five fa-spin",
+    "expanded": true,
+    "fun_id": "0502",
+    "selectable": false,
+    "children": [{
+        "text": "realTimeDisplay",
+        "iconCls": "x-fa fa-line-chart",
+        "routeId": "realTimeMainView",
+        "viewType": "realTimeMainView",
+        //"fun_id": "realTimeMainView",
+        "leaf": true
+    }]
+}, {
+    "text": "performanceReport",
+    "iconCls": "x-fa fa-arrow-circle-down",
+    "routeId": "reportww",
+    "viewType": "reportMainView",
+    //"fun_id": "reportMainView",
+    "leaf": true
+}, {
+    "text": "Template Management",
+    "iconCls": "icon-puzzle_miss",
+    "expanded": true,
+    "fun_id": "0504",
+    "selectable": false,
+    "children": [{
+        "text": "metricTmplMang",
+        "iconCls": "x-fa fa-puzzle-piece",
+        "viewType": "PTMMainView",
+        //"fun_id": "PTMMainView",
+        "routeId": "PTMMainView",
+        "leaf": true
+    }, {
+        "text": "tcaTmplMang",
+        "iconCls": "x-fa fa-puzzle-piece",
+        //"fun_id": "TTMMainView",
+        "viewType": "TTMMainView",
+        "routeId": "TTMMainView",
+        "leaf": true
+    }]
+}, {
+    "text": "performanceServer",
+    "iconCls": "x-fa fa-line-chart",
+    "expanded": true,
+    "fun_id": "0505",
+    "selectable": false,
+    "children": [/*{
+        "text": "basicInfoServer",
+        "iconCls": "x-fa fa-user",
+        "viewType": "basicInfo",
+        //"fun_id": "basicInfo",
+        "routeId": "basicInfo",
+        "leaf": true
+    }, */{
+        "text": "collectAssessment",
+        "iconCls": "x-fa fa-download",
+        "viewType": "estimateMainView",
+        //"fun_id": "estimateMainView",
+        "routeId": "estimate",
+        "leaf": true
+    }]
+}]

@@ -1,0 +1,91 @@
+{
+    "app": {
+        "app_name": "MSP",
+
+        "lang": "zh_CN",
+        "theme": "triton",
+
+        "area": "ui",
+        "debug": false,
+        "login_timeout": 3600,
+        "static_cache_maxage": 86400, // 调试模式设为0，生产模式可设为一天(86400)以上
+        "max_scan_block_size": 4096,
+        "enable_https": false,
+
+        "build_mode": "production", // 生产模式(最快)
+
+        "enable_mapapi": false, // 使用在线地图或离线地图
+        "polling": true
+    },
+
+    "db": {
+        "type": "mysql",
+        "host": "127.0.0.1",
+        "port": 23306,
+        "user": "root",
+        "password": "raisecom@123",
+        "database": "db_msp"
+    },
+
+    "redis": {
+        "host": "127.0.0.1",
+        "port": 61003
+    },
+
+    "mq": {
+        "mqtt_host": "127.0.0.1",
+        "mqtt_port": 1883,
+        "mqtt_user": "admin",
+        "mqtt_pwd": "admin",
+        "mqtt_websocket_port": 15675, // use RabbitMQ
+        "amqp_host": "127.0.0.1",
+        "amqp_port": 5672
+    },
+
+    "proxy": {
+
+        "internal": {
+            "/pm2": "127.0.0.1:9615",
+            "/alarm": "127.0.0.1:60030",
+            "/reports": "127.0.0.1:60066",
+            "/ccd": "127.0.0.1:60050",
+            "/confcenter": "127.0.0.1:60050",
+            "/sysmanage": "127.0.0.1:60001",
+            "/syslog": "127.0.0.1:60012",
+            "/osscommon": "127.0.0.1:60070",
+            "/pmManagement": "127.0.0.1:60040",
+            "/pmCollect": "127.0.0.1:60041"
+        },
+
+		"internal_upload": {
+            "/confcenterU": "127.0.0.1:60050"
+        },
+		
+        "south": {
+            "/rabbitmq": "127.0.0.1:15672"
+        },
+
+        "north": {
+            "/couchdb": "127.0.0.1:5984"
+        }
+    },
+    "sdn_db": {
+        "type": "mysql",
+        "host": "127.0.0.1",
+        "port": 23306,
+        "user": "root",
+        "password": "raisecom@123"
+    },    
+    "sdn_rest": {
+        "host": "127.0.0.1",
+        "port": "8181"
+    },
+    "terminal_websocket_server": {
+        "host": "127.0.0.1",
+        "port": "9001"
+    },
+
+    "processes": {
+        "sysmng": {"host": "127.0.0.1", "port": 60001}
+    }
+}

@@ -1,0 +1,54 @@
+#node-thumb-view .x-panel-body{
+    background: white;
+    font: 11px Arial, Helvetica, sans-serif;
+}
+#node-thumb-view .thumb{
+    padding: 0px;
+    padding-bottom: 0;
+}
+
+.x-quirks #node-thumb-view .thumb {
+    padding-bottom: 3px;
+}
+
+#node-thumb-view .thumb img{
+    height: 32px;
+    width: 32px;
+}
+#node-thumb-view .thumb-wrap{
+    float: left;
+    margin: 4px;
+    margin-right: 0;
+    padding: 5px;
+}
+#node-thumb-view .thumb-wrap span {
+    
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    width: 94px; /* for ie to ensure that the text is centered */
+}
+
+#node-thumb-view .x-item-over{
+    border:1px solid #dddddd;
+    background: #efefef url(over.gif) repeat-x left top;
+    padding: 4px;
+}
+
+#node-thumb-view .x-item-selected{
+    background: #eff5fb url(selected.gif) no-repeat right bottom;
+    border:1px solid #99bbe8;
+    padding: 4px;
+}
+#node-thumb-view .x-item-selected .thumb{
+    background:transparent;
+}
+
+#node-thumb-view .loading-indicator {
+    font-size:11px;
+    background-image:url('loading.gif');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left:20px;
+    margin:10px;
+}

@@ -1,0 +1,100 @@
+{
+    "app": {
+        "app_name": "MSP",
+
+        "lang": "zh_CN",
+        // "lang": "en_US",
+        "theme": "triton",
+        // "theme": "gray",
+        // "theme": "classic",
+
+        "area": "ui",
+        "debug": true,
+        "login_timeout": 3600,
+        "static_cache_maxage": 0, // 调试模式设为0，生产模式可设为一天(86400)以上
+        "max_scan_block_size": 4096,
+        "enable_https": false,
+
+        "build_mode": "development", // 开发模式(慢)
+        // "build_mode": "production",	// 生产模式(最快)
+        // "build_mode": "testing",		// 生产测试模式(快)
+
+        "enable_mapapi": false, // 使用在线地图或离线地图
+        "polling": false
+    },
+
+    "db": {
+        "type": "mysql",
+        // "host": "172.16.61.153",
+        // "port": 13306,
+        // "user": "root",
+        // "password": "OSSDB123",
+        // "database": "nnm5"
+        "host": "localhost",
+        "port": 23306,
+        "user": "root",
+        "password": "raisecom@123",
+        "database": "db_msp"
+    },
+
+    "redis": {
+        "host": "172.16.75.98",
+        "port": 6379
+    },
+
+    "mq": {
+        "mqtt_host": "172.16.75.98",
+        "mqtt_port": 1883,
+        "mqtt_user": "guest",
+        "mqtt_pwd": "guest",
+        // "mqtt_websocket_port": 61614,  // use ActiveMQ
+        "mqtt_websocket_port": 15675, // use RabbitMQ
+        "amqp_host": "172.16.75.98",
+        "amqp_port": 5672
+    },
+
+    "proxy": {
+        "internal": {
+            "/pm2": "localhost:9615",
+            // "/alarm": "172.16.75.26:8080",
+            "/alarm": "172.16.75.37:8080",
+            "/alarmcheck": "172.16.75.39:8080",
+            "/reports": "172.16.75.66:60066",
+            "/report_resource": "172.16.75.66:8088",
+            "/ccd": "172.16.75.42:60050",
+            "/confcenter": "172.16.75.42:60050",
+            "/sysmanage": "192.168.202.109:60001",
+            "/syslog": "localhost:60012",
+            "/osscommon": "172.16.75.136:60070",
+            "/symbolTemplateMangement": "192.168.202.41:8321",
+            "/pmManagement": "localhost:60040",
+            "/pmCollect": "localhost:60041"
+        },
+
+        "internal_upload": {
+            "/cc": "192.168.202.109:60001",
+            "/confcenterU": "172.16.75.42:60050"
+        },
+
+        "south": {
+            "/rabbitmq": "localhost:15672"
+        },
+
+        "north": {
+            "/pm2.5": "localhost:9615"
+        }
+    },
+
+    "sdn_rest": {
+        "host": "localhost",
+        "port": "8181"
+    },
+    "terminal_websocket_server": {
+        "host": "localhost",
+        "port": "9001"
+    },
+
+    "processes": {
+        "sysmng": {"host": "172.16.75.93", "port": 60001}
+    }
+}

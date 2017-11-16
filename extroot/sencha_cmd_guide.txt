@@ -1,0 +1,152 @@
+
+生成一个新应用
+sencha -sdk ~/extsdk/ generate app --ext --classic Admin admin
+  -sdk 指向extsdk目录
+  generate app 为生成新应用
+  --ext --classic 为只使用classic工具箱
+  Admin为应用名
+  admin为生成应用的目录
+
+执行应用build
+  sencha app build
+
+
+
+修改主题
+app.json文件
+  "theme": "theme-triton",
+  // "theme": "theme-gray",
+  // "theme": "theme-classic",
+
+
+
+生成自定义主题
+sencha generate theme my-triton
+sencha generate theme my-gray
+sencha generate theme my-classic
+
+命令执行后会在项目目录下生成相应的目录
+packages/local/my-triton
+packages/local/my-gray
+packages/local/my-classic
+
+修改目录下的package.json
+让当前的自定义主题继承自某个系统已有主题，如'theme-triton'
+
+   "extend": "theme-triton",
+
+
+
+同时使用多个主题及多语言
+app.json文件
+
+    "toolkit": "classic",
+
+    // build多个主题
+    "builds": {
+        "triton": {
+            "theme": "my-triton"
+        },
+        "gray": {
+            "theme": "my-gray"
+        },
+        "classic": {
+            "theme": "my-classic"
+        }
+    },
+
+    // 需要ext-locale模块
+    "requires": [
+        "font-awesome",
+        "ext-locale"
+    ],
+
+    // 支持的语言
+    "locales": [
+        "en",
+        "zh_CN"
+    ],
+
+    "bootstrap": {
+        // 需要增加这一行
+        "manifest": "${build.id}.json",
+
+        "base": "${app.dir}",
+        "microloader": "bootstrap.js",
+        "css": "bootstrap.css"
+    },
+
+    // 输入html模板文件
+    "indexHtmlPath": "index.ejs",
+
+    "output": {
+        // "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+        // "appCache": {
+        //     "enable": false
+        // }
+
+        // =============== 输出设置 ==============
+        "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+        // 输出heml模板文件名
+        "page": "index.ejs",
+        "manifest": "${build.id}.json",
+        "js": "${build.id}/app.js",
+        "framework": "${build.id}/framework.js",
+        "resources": {
+            "path": "./${build.id}/resources",
+            "images": "./${build.id}/resources/images",
+            "shared": "./resources",
+            "toolkit": "${toolkit.name}/resources",
+            "base": "."
+        },
+        "deltas": {
+            "enable": false
+        },
+        "appCache": {
+            "enable": false
+        }        
+    },
+    
+
+build后会根据主题及语言的组合产生多个<theme>-<locale>.json, <theme>-<locale>.jsonp文件 
+-rw-rw-r--  1 xjp xjp 63406 Jul  3 10:54 classic-en.json
+-rw-rw-r--  1 xjp xjp 63436 Jul  3 10:54 classic-en.jsonp
+-rw-rw-r--  1 xjp xjp 63607 Jul  3 10:45 classic.json
+-rw-rw-r--  1 xjp xjp 63637 Jul  3 10:45 classic.jsonp
+-rw-rw-r--  1 xjp xjp 59719 Jul  3 10:54 classic-zh_CN.json
+-rw-rw-r--  1 xjp xjp 59749 Jul  3 10:54 classic-zh_CN.jsonp
+-rw-rw-r--  1 xjp xjp 63739 Jul  3 10:54 gray-en.json
+-rw-rw-r--  1 xjp xjp 63769 Jul  3 10:54 gray-en.jsonp
+-rw-rw-r--  1 xjp xjp 60022 Jul  3 10:45 gray.json
+-rw-rw-r--  1 xjp xjp 60052 Jul  3 10:45 gray.jsonp
+-rw-rw-r--  1 xjp xjp 60052 Jul  3 10:54 gray-zh_CN.json
+-rw-rw-r--  1 xjp xjp 60082 Jul  3 10:54 gray-zh_CN.jsonp
+-rw-rw-r--  1 xjp xjp 67343 Jul  3 10:53 triton-en.json
+-rw-rw-r--  1 xjp xjp 67373 Jul  3 10:53 triton-en.jsonp
+-rw-rw-r--  1 xjp xjp 59684 Jul  3 10:46 triton.json
+-rw-rw-r--  1 xjp xjp 59714 Jul  3 10:46 triton.jsonp
+-rw-rw-r--  1 xjp xjp 63632 Jul  3 10:54 triton-zh_CN.json
+-rw-rw-r--  1 xjp xjp 63662 Jul  3 10:54 triton-zh_CN.jsonp
+
+
+// 如果使用动态主题和语言切换，不能使用appCache功能
+app.json文件
+
+    "production": {
+        "output": {
+            "appCache": {
+                "enable": false,
+
+
+
+动态切换主题和语言环境
+在index.html文件中控制
+
+    <script type="text/javascript">
+        var Ext = Ext || {}; // Ext namespace won't be defined yet...
+
+        Ext.beforeLoad = function (tags) {
+     		// 通过主题和语言的选择指定相应的profile文件
+            Ext.manifest = 'triton-zh_CN'; // this name must match a build profile name
+        };
+    </script>

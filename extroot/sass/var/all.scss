@@ -1,0 +1,30 @@
+/*
+ * This is is imported by virtue of "sass.var" in "app.json".
+ */
+
+$enable-font-awesome: dynamic(true);
+
+
+// ============================== AdminLTE style base colors ===============================
+
+$adminlte-navigation-background-color: #222d32;
+$adminlte-toolbar-background-color: #3c8dbc;
+$adminlte-indicator-color: #FFA500;
+$adminlte-logo-background-color: darken($adminlte-toolbar-background-color, 5%);
+
+/*
+$tree-glyph-color: dynamic($base-color);
+$tree-checkbox-glyph-color: dynamic($base-color);
+$tree-icon-spacing: dynamic(6px);
+$tree-checkbox-spacing: dynamic(6px);
+$tree-elbow-spacing: dynamic(4px);
+$tree-icon-width: dynamic(16px);
+*/
+
+$tree-icon-spacing: dynamic(1px);
+$tree-checkbox-spacing: dynamic(2px);
+$tree-elbow-spacing: dynamic(1px);
+$tree-cell-inner-padding : dynamic(3px 3px); 
+
+/*$grid-row-cell-font-size : dynamic(14px);*/
+$grid-cell-inner-padding : dynamic(3px 3px); 

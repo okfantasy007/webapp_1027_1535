@@ -1,0 +1,119 @@
+.breadcrumb a {
+    display: inline-block;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    background: #919191;
+    text-align: center;
+    padding: 0 6px 0 10px;
+    position: relative;
+    z-index: 1;
+    border: none;
+    color: #000;
+    /*display: inline-block;*/
+    /*background: #3498db;*/
+    /*text-decoration: none;*/
+    /*position: relative;*/
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    /*padding: 0 20px 0 20px;*/
+    /*text-align: center;*/
+    /*margin-right: 23px;*/
+}
+
+.breadcrumb a:after {
+    content: "";
+    border-top: 12px solid #fff;
+    border-bottom: 12px solid #fff;
+    border-left: 6px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+
+    /*right: 20px;*/
+    /*border-color: transparent;*/
+    /*border-left-color: #3498db;*/
+    /*z-index: 1;*/
+}
+
+.breadcrumb a:before {
+    content: "";
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 6px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*left: 20px;*/
+    /*border-left-color: transparent;*/
+}
+/*.breadcrumb a:after, .breadcrumb a:before{*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*border: 0 solid #3498db;*/
+    /*border-width: 20px 10px;*/
+    /*width: 0;*/
+    /*height: 0;*/
+/*}*/
+
+.breadcrumb a:hover {
+    background: #fa5ba5;
+}
+
+.breadcrumb a span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.eline-topo-icon {
+    content: "\f0e4"
+}
+
+.breadcrumb a:first-child:before {
+    display: none;
+}
+
+.breadcrumb a:last-child:after{
+    display: none;
+}
+
+breadcrumb a:first-child{
+    padding: 0 6px 0 0;
+}
+
+.breadcrumb a:last-child{
+    padding: 0 0 0 10px;
+}
+
+.x-btn-default-toolbar-small {
+    border-color: #d2d2d2;
+    background-image: none;
+    background-color: #e2e2e2;
+}
+
+.breadcrumb-btn-background{
+    background-color: #5fa4cc !important;
+}
+
+/*.breadcrumb a:hover:after {*/
+    /*border-left-color: #e56592;*/
+    /*transition: all 0.2s ease;*/
+/*}*/
+
+.tooltip {
+    font-family: simsun;
+    font-size: 14px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+}

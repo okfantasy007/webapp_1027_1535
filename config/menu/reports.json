@@ -1,0 +1,19 @@
+[{
+    "text": "Template Management",
+    "iconCls": "icon-puzzle_miss",
+    "routeId": "home",
+    "viewType": "reportTemplateListView",
+    "leaf": true
+}, {
+    "text": "Task Management",
+    "iconCls": "x-fa fa-tasks",
+    "routeId": "report_task",
+    "viewType": "reportTaskListView",
+    "leaf": true
+}, {
+    "text": "Result Management",
+    "iconCls": "x-fa fa-line-chart",
+    "routeId": "report_result",
+    "viewType": "reportResultListView",
+    "leaf": true
+}]

@@ -1,0 +1,58 @@
+{
+  "nodes":[
+    {
+        "id": 1,
+        "name": "Myriel",
+        "icon": "/images/topo/synced-32.png",
+        "width" : 32,
+        "height": 32,
+        "lat": 40.05435,
+        "lng": 116.28271,
+    },
+    {
+        "id": 2,
+        "name": "Napoleon",
+        "icon": "/images/topo/share-android-circle-blue-32.png",
+        "width" : 32,
+        "height": 32,
+        "lat": 40.054341,
+        "lng": 116.288145,
+    },
+    {
+        "id": 3,
+        "name": "Cravatte",
+        "icon": "/images/topo/wi-fi-32.png",
+        "width" : 32,
+        "height": 32,
+        "lat": 40.050723,
+        "lng": 116.285612,
+    }
+  ],
+
+  "links":[
+    {
+        "id": 1,
+        "sourceIdx":0,
+        "targetIdx":1,
+        "strokeColor": "red",
+        "strokeWeight": 2,
+        "strokeOpacity": 0.5,
+    },
+    {
+        "id": 2,
+        "sourceIdx":1,
+        "targetIdx":2,
+        "strokeColor": "blue",
+        "strokeWeight": 4,
+        "strokeOpacity": 0.5,
+    },
+    {
+        "id": 3,
+        "sourceIdx":0,
+        "targetIdx":2,
+        "strokeColor": "green",
+        "strokeWeight": 6,
+        "strokeOpacity": 0.5,
+    }
+  ]
+}

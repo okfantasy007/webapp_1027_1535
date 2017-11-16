@@ -1,0 +1,137 @@
+body {
+  background: white;
+  color: black;
+  font-family: tahoma,arial,verdana,helvetica,sans-serif;
+  font-size:  10pt;
+  width:96%;
+}
+
+body.full {
+  width:100%;
+}
+
+input {
+  font-size:  10pt;
+}
+
+img {
+border:0px;
+}
+
+h1 {
+  background: #cccccc;
+  color:#666666;
+  border-style: none;
+  border-color: black;
+  border-width: 1px;
+  padding: 3px;
+  margin-bottom: 13px;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+textarea, select {
+    border: solid;
+    border-style: solid;
+    border-width: 1px;
+    color: #222;
+    border-color: #888;
+    background: #fdfdfd;
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size:  9pt;
+}
+
+table {
+    background: #ffffff;
+    color: black;
+    border-style: solid;
+    border-color: #bbbbbb;
+    border-width: 1px;
+    text-align: center;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+table.noborder {
+    border-style: none;
+}
+table.border {
+    border-style: solid;
+    border-color: #bbbbbb;
+    border-width: 1px;
+}
+
+th {
+    color: #2e4161;
+    background: #D9E7FF;
+    border-color: #7f7f7f;
+    border-width: 1px;
+    font-size: 9pt;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+th.right {
+    padding-right: 5px;
+    text-align: right;
+	white-space:nowrap;	
+}
+td {
+    color:black;
+    border-bottom-style: solid;
+    border-color: #cbcbcb;
+    border-width: 1px;
+    font-size:  10pt;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+td.left {
+    padding-left: 5px;
+    text-align: left;
+}
+td.right {
+    padding-right: 5px;
+    text-align: right;
+	color:#336699;
+}
+td.title {
+    padding-right: 5px;
+    text-align: center;
+	color:#336699;
+	background-color:#eCeCeC;
+}
+td.no_border_bottom_left {
+    padding-left: 5px;
+    text-align: left;
+    padding-left: 5px;
+    border-bottom-style: none;
+}
+fieldset {
+    font-size:  9pt;
+}
+span {
+    font-size:  9pt;
+}
+span.blue {
+    font-size:  9pt;
+	color:blue;
+}
+span.red {
+    font-size:  9pt;
+	color:red;
+}
+p {
+    font-size:  9pt;
+}
+
+fieldset.noborder {
+	border:none;
+}

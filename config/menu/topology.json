@@ -1,0 +1,43 @@
+[{
+    "text": "Topology View",
+    "iconCls": "icon-house",
+    "routeId": "home",
+    "viewType": "topoMainView",
+    //"fun_id": "topoMainView",
+    "leaf": true
+}, {
+    "text": "Subnet List",
+    "iconCls": "icon-subnet",
+    "routeId": "subnet",
+    "viewType": "topoSubnetGridView",
+    //"fun_id": "topoSubnetGridView",
+    "leaf": true
+}, {
+    "text": "Node List",
+    "iconCls": "icon-line-segment",
+    "routeId": "node",
+    "viewType": "topoNodeGridView",
+    //"fun_id": "topoNodeGridView",
+    "leaf": true
+}, {
+    "text": "Link List",
+    "iconCls": "icon-circular-double-sided-repair-tool",
+    "routeId": "link",
+    "viewType": "topoLinkGridView",
+    //"fun_id": "topoLinkGridView",
+    "leaf": true
+}, {
+    "text": "Device View",
+    "iconCls": "x-fa fa-server",
+    "viewType": "deviceMainView",
+    //"fun_id": "deviceMainView",
+    "routeId": "device",
+    "leaf": true
+}, {
+    "text": "ManagerTopo",
+    "iconCls": "icon-network-triangular-outline-symbol-in-a-circle",
+    "viewType": "bandTopoView",
+    //"fun_id": "bandTopoView",
+    "routeId": "bandTopo",
+    "leaf": true
+}]

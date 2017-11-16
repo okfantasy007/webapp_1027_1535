@@ -1,0 +1,202 @@
+﻿.x-treelist-navigation {
+	background-color: #32404e;
+	/*background-position: 0px 0%;*/
+	padding: 0 0 0 0
+}
+.x-big .x-treelist-navigation {
+	background-position: 0%
+}
+.x-treelist-navigation .x-treelist-toolstrip {
+	background-color: #32404e
+}
+.x-treelist-navigation .x-treelist-item-selected.x-treelist-item-tool {
+	background-color: #475360
+}
+.x-treelist-navigation .x-treelist-item-selected.x-treelist-item-tool:after {
+	height: 44px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: " ";
+	width: 5px;
+	background-color: #35baf6
+}
+.x-treelist-navigation .x-treelist-item-selected > .x-treelist-row {
+	background-color: #475360
+}
+.x-treelist-navigation .x-treelist-item-tool {
+	padding-left: 10px;
+	padding-right: 10px
+}
+.x-treelist-navigation .x-treelist-item-tool-floated:after {
+	height: 44px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: " ";
+	width: 5px;
+	background-color: #35baf6
+}
+.x-treelist-navigation .x-treelist-item-icon:before, .x-treelist-navigation .x-treelist-item-tool:before, .x-treelist-navigation .x-treelist-item-expander {
+	line-height: 44px
+}
+.x-treelist-navigation .x-treelist-item-icon, .x-treelist-navigation .x-treelist-item-tool, .x-treelist-navigation .x-treelist-item-expander {
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: 0 center
+}
+.x-treelist-navigation .x-treelist-item-loading .x-treelist-item-icon {
+	background-image: url(icons/loading.gif);
+	color: transparent
+}
+.x-treelist-navigation .x-treelist-item-icon, .x-treelist-navigation .x-treelist-item-tool {
+	color: #adb3b8;
+	font-size: 18px;
+	width: 44px
+}
+.x-treelist-navigation .x-treelist-item-tool {
+	width: 40px
+}
+.x-treelist-navigation .x-treelist-item-expander {
+	color: #fff;
+	font-size: 16px;
+	width: 24px
+}
+.x-treelist-navigation .x-treelist-item-text {
+	color: #adb3b8;
+	margin-left: 40px;
+	margin-right: 24px;
+	font-size: 14px;
+	line-height: 44px
+}
+.x-treelist-navigation .x-treelist-row {
+	padding-left: 5px;
+	padding-right: 10px
+}
+.x-treelist-navigation .x-treelist-row-over:before, .x-treelist-navigation .x-treelist-item-selected > .x-treelist-row:before {
+	content: " ";
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	width: 5px;
+	height: 100%
+}
+.x-treelist-navigation .x-treelist-row-over:before {
+	background-color: transparent
+}
+.x-treelist-navigation .x-treelist-item-selected > .x-treelist-row-over:before {
+	background-color: #57c6f8
+}
+.x-treelist-navigation .x-treelist-item-selected > .x-treelist-row:before {
+	background-color: #35baf6
+	/*background-color: #FFA500*/
+}
+.x-treelist-navigation .x-treelist-item-floated .x-treelist-container {
+	width: auto
+}
+.x-treelist-navigation .x-treelist-item-floated > .x-treelist-row {
+	background-color: #32404e
+}
+.x-treelist-navigation .x-treelist-item-floated > .x-treelist-container {
+	margin-left: -44px
+}
+.x-big .x-treelist-navigation .x-treelist-item-floated > .x-treelist-container {
+	margin-left: 0
+}
+.x-treelist-navigation .x-treelist-item-floated > * > * > .x-treelist-item-text {
+	margin-left: 0
+}
+.x-treelist-navigation .x-treelist-item-floated > * .x-treelist-row {
+	padding-left: 0
+}
+.x-treelist-navigation .x-treelist-item-floated .x-treelist-row:before {
+	width: 0
+}
+.x-treelist-navigation .x-treelist-item-floated > .x-treelist-row-over {
+	background-color: #32404e
+}
+.x-treelist-navigation .x-treelist-item-floated > .x-treelist-row-over > * > .x-treelist-item-text {
+	color: #adb3b8
+}
+.x-treelist-navigation .x-treelist-item-expanded {
+	/*background-color: #2c3845*/
+	background-color: #32404e
+}
+.x-treelist-navigation.x-treelist-highlight-path .x-treelist-item-over > * > .x-treelist-item-icon {
+	color: #fff
+}
+.x-treelist-navigation.x-treelist-highlight-path .x-treelist-item-over > * > .x-treelist-item-text {
+	color: #d6d9dc
+}
+.x-treelist-navigation.x-treelist-highlight-path .x-treelist-item-over > * > .x-treelist-item-expander {
+	color: #fff
+}
+.x-treelist-navigation .x-treelist-row-over {
+	background-color: #3c4a57
+}
+.x-treelist-navigation .x-treelist-row-over > * > .x-treelist-item-icon {
+	color: #fff
+}
+.x-treelist-navigation .x-treelist-row-over > * > .x-treelist-item-text {
+	color: #d6d9dc
+}
+.x-treelist-navigation .x-treelist-row-over > * > .x-treelist-item-expander {
+	color: #fff
+}
+.x-treelist-navigation .x-treelist-expander-first .x-treelist-item-icon {
+	left: 24px
+}
+.x-treelist-navigation .x-treelist-expander-first .x-treelist-item-text {
+	margin-left: 74px;
+	margin-right: 0
+}
+.x-treelist-navigation .x-treelist-expander-first .x-treelist-item-hide-icon > * > * > .x-treelist-item-text {
+	margin-left: 30px
+}
+.x-treelist-navigation .x-treelist-item-hide-icon > * > * > .x-treelist-item-text {
+	margin-left: 6px
+}
+
+
+
+
+.x-panel-header-title-default {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    line-height: 20px;
+}
+.x-panel-header-title-default > .x-title-icon-wrap-default > .x-title-icon-default {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    color: #606060;
+    background-position: center center;
+}
+
+.x-tool-tool-el {
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    color: #606060;
+    text-align: center;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    opacity: 0.8;
+}
+
+.x-panel-header-default .x-tool-tool-el {
+    background-color: #eee;
+}
+.x-panel-header-default {
+    background-image: none;
+    background-color: #eee;
+}
+
+.x-panel-header-default {
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+

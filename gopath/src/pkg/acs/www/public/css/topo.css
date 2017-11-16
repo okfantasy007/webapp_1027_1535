@@ -1,0 +1,36 @@
+
+.link-path-1{
+    stroke-width:1;
+}
+.link-path-1:hover {
+    stroke-width:3;
+    cursor:default;
+}
+.link-path-2{
+    stroke-width:2;
+}
+.link-path-2:hover {
+    stroke-width:4;
+    cursor:default;
+}
+.link-path-3{
+    stroke-width:3;
+}
+.link-path-3:hover {
+    stroke-width:5;
+    cursor:default;
+}
+.link-path-4{
+    stroke-width:4;
+}
+.link-path-4:hover {
+    stroke-width:6;
+    cursor:default;
+}
+.link-path-5{
+    stroke-width:5;
+}
+.link-path-5:hover {
+    stroke-width:7;
+    cursor:default;
+}

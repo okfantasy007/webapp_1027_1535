@@ -1,0 +1,145 @@
+[{
+    "text": "System Managerment",
+    "iconCls": "x-fa fa-gear",
+    "expanded": true,
+    "fun_id": "0301",
+    "selectable": false,
+    "children": [{
+        "text": "Processes",
+        "routeId": "processView",
+        "iconCls": "x-fa fa-tasks",
+        "viewType": "processView",
+        //"fun_id": "processView",
+        "leaf": true
+    }, {
+        "text": "Host Manage",
+        "iconCls": "icon-server_tower",
+        "expanded": false,
+        "fun_id": "030102",
+        "selectable": false,
+        "children": [{
+            "text": "Host Manage",
+            "iconCls": "x-fa fa-server",
+            "routeId": "serverView",
+            "viewType": "serverView",
+            //"fun_id": "serverView",
+            "leaf": true
+        }, {
+            "text": "Monitoring Task Management",
+            "routeId": "monitorTaskView",
+            "iconCls": "x-fa fa-tasks",
+            "viewType": "monitorTaskListGrid",
+            //"fun_id": "monitorTaskListGrid",
+            "leaf": true
+        }, {
+            "text": "The threshold management",
+            "iconCls": "x-fa fa-sliders",
+            "routeId": "thresholdView",
+            "viewType": "thresholdForm",
+            //"fun_id": "thresholdForm",
+            "leaf": true
+        }]
+    }, {
+        "text": "System Backup",
+        "iconCls": "icon-backup",
+        "expanded": false,
+        "fun_id": "030103",
+        "selectable": false,
+        "children": [{
+            "text": "Database Backup",
+            "iconCls": "x-fa fa-database",
+            "routeId": "databaseBackupView",
+            "viewType": "databaseBackupTab",
+            //"fun_id": "databaseBackupTab",
+            "leaf": true
+        }, {
+            "text": "Log Backup",
+            "iconCls": "icon-log-file-format",
+            "routeId": "syslogBackupView",
+            "viewType": "sysLogBackupTab",
+            //"fun_id": "sysLogBackupTab",
+            "leaf": true
+        }]
+    }, {
+        "text": "The Data Dump",
+        "iconCls": "x-fa fa-database",
+        "expanded": false,
+        "fun_id": "030104",
+        "selectable": false,
+        "children": [{
+            "text": "The Performance Data Dump",
+            "iconCls": "x-fa fa-database",
+            "routeId": "performanceDataDumpView",
+            "viewType": "perDataDumpTab",
+            //"fun_id": "perDataDumpTab",
+            "leaf": true
+        }]
+    }]
+}, {
+    "text": "日志管理",
+    "iconCls": "icon-log-file-format",
+    "expanded": true,
+    "defaultValide": true,
+    "fun_id": "0302",
+    "selectable": false,
+    "children": [{
+        "text": "登录日志",
+        "iconCls": "x-fa fa-user",
+        "viewType": "LoginLogView",
+        "routeId": "loginlog",
+        "defaultValide": true,
+        "leaf": true
+    }, {
+        "text": "安全日志",
+        "iconCls": "icon-shield",
+        "viewType": "SafeLogView",
+        "routeId": "safelog",
+        "defaultValide": true,
+        "leaf": true
+    }, {
+        "text": "操作日志",
+        "iconCls": "x-fa fa-gear",
+        "viewType": "SysOpLogView",
+        "routeId": "systemOpLog",
+        "defaultValide": true,
+        "leaf": true
+    }, {
+        "text": "设备syslog日志",
+        "iconCls": "x-fa fa-server",
+        "viewType": "DevOpLogView",
+        "routeId": "devicelog",
+        "defaultValide": true,
+        "leaf": true
+    }, {
+        "text": "运行日志",
+        "iconCls": "x-fa fa-clock-o",
+        "viewType": "RunLogView",
+        "routeId": "runLog",
+        "defaultValide": true,
+        "leaf": true
+    }]
+}, {
+    "text": "Security",
+    "iconCls": "icon-shield",
+    "expanded": true,
+    "selectable": false,
+    "children": [{
+        "text": "网管用户管理",
+        "iconCls": "x-fa fa-user",
+        "viewType": "secUserLeftTree",
+        "routeId": "usermgr",
+        "leaf": true
+    }, {
+        "text": "访问控制列表",
+        "iconCls": "x-fa fa-filter",
+        "viewType": "controlListGrid",
+        "routeId": "acl",
+        "leaf": true
+    }, {
+        "text": "设置安全策略",
+        "iconCls": "icon-security-on",
+        "viewType": "securityPolicyForm",
+        "routeId": "policies",
+        "leaf": true
+    }]
+}]

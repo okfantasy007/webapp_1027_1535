@@ -1,0 +1,156 @@
+
+
+<!-- ACS发送Upload报文 -->
+<SOAP-ENV:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:cwmp="urn:dslforum-org:cwmp-1-0"    
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+  <SOAP-ENV:Header>
+       <cwmp:ID soap:mustUnderstand="1">1244506752</cwmp:ID>       
+  </SOAP-ENV:Header>  
+  <SOAP-ENV:Body>
+     <cwmp:Upload>
+       <CommandKey>uploadkey</CommandKey>
+       <FileType>1 Vendor Configuration File</FileType>
+       <URL>http://172.16.75.97:5000/dev_file/218</URL>
+       <Username>user1</Username>
+       <Password>password</Password>
+       <DelaySeconds>1</DelaySeconds>
+      </cwmp:Upload>
+
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<!-- CPE 响应upload报文 -->
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+  <SOAP-ENV:Header>
+    <cwmp:ID SOAP-ENV:mustUnderstand="1">1244506752</cwmp:ID>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <cwmp:UploadResponse>
+      <Status>1</Status>
+      <StartTime>0001-01-01T00:00:00Z</StartTime>
+      <CompleteTime>0001-01-01T00:00:00Z</CompleteTime>
+    </cwmp:UploadResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<!-- CPE操作错误响应报文，没有<cwmp:ID SOAP-ENV:mustUnderstand="1">1244506752</cwmp:ID>字段 
+  直接发送，不需要先发inform -->
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+  <SOAP-ENV:Body>
+    <SOAP-ENV:Fault>
+      <faultcode>Server</faultcode>
+      <faultstring>CWMP Fault</faultstring>
+      <detail>
+        <cwmp:Fault>
+          <FaultCode>9011</FaultCode>
+          <FaultString>Upload failure</FaultString>
+        </cwmp:Fault>
+      </detail>
+    </SOAP-ENV:Fault>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+<!-- upload操作成功inform报文 -->
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+  <SOAP-ENV:Header>
+    <cwmp:ID SOAP-ENV:mustUnderstand="1">295897</cwmp:ID>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <cwmp:Inform>
+      <DeviceId>
+        <Manufacturer>RAISECOM</Manufacturer>
+        <OUI>000E5E</OUI>
+        <ProductClass>MSG2200B</ProductClass>
+        <SerialNumber>101010101010</SerialNumber>
+      </DeviceId>
+      <Event xsi:type="SOAP-ENC:Array" SOAP-ENC:arrayType="cwmp:EventStruct[2]">
+        <EventStruct>
+          <EventCode>M Upload</EventCode>
+          <CommandKey/>
+        </EventStruct>
+        <EventStruct>
+          <EventCode>7 TRANSFER COMPLETE</EventCode>
+          <CommandKey/>
+        </EventStruct>
+      </Event>
+      <MaxEnvelopes>1</MaxEnvelopes>
+      <CurrentTime>2016-08-10T16:45:46Z</CurrentTime>
+      <RetryCount>1</RetryCount>
+      <ParameterList xsi:type="SOAP-ENC:Array" SOAP-ENC:arrayType="cwmp:ParameterValueStruct[11]">
+        <ParameterValueStruct>
+          <Name>InternetGatewayDevice.DeviceSummary</Name>
+          <Value xsi:type="string">InternetGatewayDevice: 1.1 [](Baseline: 1, GatewayInfo: 1, LAN: 1)</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+          <Name>InternetGatewayDevice.DeviceInfo.ModelName</Name>
+          <Value xsi:type="string">MSG2200-2GE-AC</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+          <Name>InternetGatewayDevice.DeviceInfo.HardwareVersion</Name>
+          <Value xsi:type="string">B.0</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+          <Name>InternetGatewayDevice.DeviceInfo.SoftwareVersion</Name>
+          <Value xsi:type="string">RCIOS_2.0.136.20160512</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+          <Name>InternetGatewayDevice.ManagementServer.ConnectionRequestURL</Name>
+          <Value xsi:type="string">http://172.16.75.124:7547/cpe</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+          <Name>InternetGatewayDevice.ManagementServer.ParameterKey</Name>
+          <Value xsi:type="string">1234</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+          <Name>InternetGatewayDevice.DeviceInfo.SpecVersion</Name>
+          <Value xsi:type="string">1.0-X_CT-COM_3.0</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+          <Name>InternetGatewayDevice.DeviceInfo.ProvisioningCode</Name>
+          <Value xsi:type="string">3.0</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+          <Name>InternetGatewayDevice.WANDevice.1.WANCommonInterfaceConfig.WANAccessType</Name>
+          <Value xsi:type="string">Ethernet</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+          <Name>InternetGatewayDevice.WANDevice.2.WANCommonInterfaceConfig.WANAccessType</Name>
+          <Value xsi:type="string">Ethernet</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+          <Name>InternetGatewayDevice.X_CT-COM_UserInfo.UserName</Name>
+          <Value xsi:type="string"/>
+        </ParameterValueStruct>
+      </ParameterList>
+    </cwmp:Inform>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+<!-- upload操作成功后的TransferComplete报文 -->
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+  <SOAP-ENV:Header>
+    <cwmp:ID SOAP-ENV:mustUnderstand="1">295897</cwmp:ID>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <cwmp:TransferComplete>
+      <CommandKey>uploadkey</CommandKey>
+      <FaultStruct>
+        <FaultCode>0</FaultCode>
+        <FaultString/>
+      </FaultStruct>
+      <StartTime>2016-08-10T08:45:15Z</StartTime>
+      <CompleteTime>2016-08-10T08:45:15Z</CompleteTime>
+    </cwmp:TransferComplete>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

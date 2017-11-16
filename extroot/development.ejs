@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html manifest="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+
+
+    <title>Raisecom <%= app_name %></title>
+    <script type="text/javascript">
+        var APP = {
+            app_name : '<%= app_name %>',
+            version : '<%= version %>',
+            theme : '<%= theme %>',
+            lang : '<%= lang %>',
+            user : '<%= user %>',
+            sessionID : '<%= sessionID %>',
+          
+            wallpaper: '<%= wallpaper %>',
+            login_timeout: <%= login_timeout %>,
+            debug: <%= debug %>,
+            enable_online_map: <%= enable_mapapi %>,
+            mqtt_websocket_host: '<%= mqtt_websocket_host %>',
+            mqtt_websocket_port: <%= mqtt_websocket_port %>,
+            mqtt_websocket_user: '<%= mqtt_websocket_user %>',
+            mqtt_websocket_pwd: '<%= mqtt_websocket_pwd %>',
+
+            host: location.host.split(":")[0],
+            port: location.host.split(":")[1],
+            // 不转义模板格式
+            dict: <%- i18ndict %>,
+            user_auth: <%- user_auth %>,
+            terminal_websocket_host:'<%= terminal_websocket_host%>',
+            terminal_websocket_port:'<%= terminal_websocket_port%>'
+        };
+        // APP.headerHeight = APP.theme=='triton' ? 68 : 56;
+        APP.headerHeight = 60;
+        APP.leftMenuWidth = 220;
+
+        var Ext = Ext || {};
+        Ext.beforeLoad = function (tags) {
+            var locale = APP.lang=='en_US' ? 'en' : APP.lang,
+                profile = APP.theme + "-" + locale;
+            console.log(profile);
+            Ext.manifest = profile;
+        };
+
+    </script>
+
+    <script type="text/javascript" src="javascripts/public.js"></script>
+
+    <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+    <script id="microloader" data-app="b1b71b04-b713-41e9-86b3-dd46c8641150" type="text/javascript" src="bootstrap.js"></script>
+
+</head>
+<body></body>
+</html>
